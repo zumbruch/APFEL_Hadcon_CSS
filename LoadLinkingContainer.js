@@ -1,61 +1,57 @@
 importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
 
-var portsOffset=0;
-var typeOffset=8;
-var opiPathOffset=7;
-var debugOffset=12;
-
-var opiPath  = PVUtil.getString(pvs[opiPathOffset]);
-var debug = PVUtil.getLong(pvs[debugOffset]);
-types = [  "PIN" , "PORT" ,"DDR" ];
-ports = [ "A","B","C","D","E","F","G" ];
-
 widget.removeAllChildren();
 
-for(var i=0; i<ports.length; i++){
-	if (0 == PVUtil.getLong(pvs[i + portsOffset]))
-	{
-		if (0 != debug) { ConsoleUtil.writeInfo("DEBUG: " + "port " + ports[i] + " skipped");}
-		continue;
-	}
-	else
-	{
-		if (0 != debug) { ConsoleUtil.writeInfo( "DEBUG: " + "port " + ports[i] + " chosen");}
-	}
-	
-	for(var j=0; j<types.length; j++){
- 	
-	    var insert = PVUtil.getLong(pvs[j + typeOffset] );
-		if (0 != debug) {ConsoleUtil.writeInfo( "DEBUG: " + ports[i] + "/" + j + " --- " + types[j] + ports[i] + " (" + pvs[j+typeOffset] + ")");}
-		
-		if ( 0 == insert) 
-		{
-			if (0 != debug) {ConsoleUtil.writeInfo( "DEBUG: " + types[j] + "x " + insert + " skip");}
+for(var row=-1; row<=0xF; row++){
+	for(var column=-1; column<=0xF; column++){
+		//create linking container
+		var linkingContainer = WidgetUtil.createWidgetModel("org.csstudio.opibuilder.widgets.linkingContainer");	
+		linkingContainer.setPropertyValue("opi_file", "chipIdStatus.opi");
+		linkingContainer.setPropertyValue("auto_size", true);
+		linkingContainer.setPropertyValue("zoom_to_fit", false);
+		linkingContainer.setPropertyValue("border_style", 0);
+
+
+        if (-1 == column && -1 == row ) // corner
+        {
+			linkingContainer.setPropertyValue("group_name", "corner");
+			linkingContainer.setPropertyValue("visible", false);
+        }
+        if (0xF == column && 0xF == row ) // corner
+        {
 			continue;
+        }
+		else if ( -1 == column ) // row	
+		{
+			linkingContainer.setPropertyValue("group_name", "rowLabel");
+		}
+		else if ( -1 == row ) // column	
+		{
+			linkingContainer.setPropertyValue("group_name", "columnLabel");
 		}
 		else
 		{
-			if (0 != debug) {ConsoleUtil.writeInfo( "DEBUG: " + types[j] + "x " + insert + " show");}
+			linkingContainer.setPropertyValue("group_name", "roundStatus");
 		}
-		
-		//create linking container
-		var linkingContainer = WidgetUtil.createWidgetModel("org.csstudio.opibuilder.widgets.linkingContainer");	
-		linkingContainer.setPropertyValue("opi_file", opiPath);
-		linkingContainer.setPropertyValue("auto_size", true);
-		linkingContainer.setPropertyValue("zoom_to_fit", false);
-		linkingContainer.setPropertyValue("group_name", "Controls");
-		linkingContainer.setPropertyValue("name", ("Controls" + types[j] + ports[i]));
-		linkingContainer.setPropertyValue("border_style", 0);
-	
+
 		//add macros
-		linkingContainer.addMacro("index", i);
-		linkingContainer.addMacro("RegName", types[j]+ports[i]);
+		var number = (column +  row * 16);
+		linkingContainer.addMacro("chipId", number);
+		linkingContainer.addMacro("chipIdHex", ("0x" + number.toString(16).toUpperCase()));
+		linkingContainer.addMacro("chipIdLow", column);
+		linkingContainer.addMacro("chipIdColumnHex", ("0xx" + column.toString(16).toUpperCase()));
+		linkingContainer.addMacro("chipIdHigh", row);
+		linkingContainer.addMacro("chipIdRowHex", ("0x" + row.toString(16).toUpperCase() + "x"));
 
 		//add linking container to widget
-		widget.addChildToBottom(linkingContainer);
+		widget.addChildToBottom(linkingContainer);	
 	}
 }
 
+var gridLayout = WidgetUtil.createWidgetModel("org.csstudio.opibuilder.widgets.gridLayout");
+gridLayout.setPropertyValue("number_of_columns", (16 + 1));	
+gridLayout.setPropertyValue("grid_gap", 1);	
+widget.addChildToBottom(gridLayout);
 widget.performAutosize();
 
 
