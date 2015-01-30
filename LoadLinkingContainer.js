@@ -19,7 +19,13 @@ for(var row=-1; row<=0xF; row++){
         }
         if (0xF == column && 0xF == row ) // corner
         {
-			continue;
+			linkingContainer.setPropertyValue("group_name", "corner");
+			linkingContainer.setPropertyValue("visible", false);
+        }
+        if (0x0 == column && 0x0 == row ) // corner
+        {
+			linkingContainer.setPropertyValue("group_name", "corner");
+			linkingContainer.setPropertyValue("visible", false);
         }
 		else if ( -1 == column ) // row	
 		{
