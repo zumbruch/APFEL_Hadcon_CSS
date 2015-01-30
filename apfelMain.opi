@@ -8,7 +8,7 @@
   <boy_version>3.2.16.20140409</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
-  <height>1100</height>
+  <height>1050</height>
   <name>Display</name>
   <snap_to_geometry>true</snap_to_geometry>
   <show_grid>true</show_grid>
