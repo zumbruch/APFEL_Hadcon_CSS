@@ -39,7 +39,7 @@
     <visible>true</visible>
     <wuid>-44e60fd:14b2c12d03f:-7841</wuid>
     <scripts />
-    <height>135</height>
+    <height>136</height>
     <name>Dac</name>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -59,7 +59,7 @@
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>303</width>
+    <width>324</width>
     <border_style>0</border_style>
     <rules />
     <fc>false</fc>
@@ -75,14 +75,13 @@
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
       <macros>
         <include_parent_macros>true</include_parent_macros>
-        <DacNumber>$(name)</DacNumber>
       </macros>
       <visible>true</visible>
       <wuid>-44e60fd:14b2c12d03f:-56be</wuid>
       <auto_size>true</auto_size>
       <scripts />
       <zoom_to_fit>false</zoom_to_fit>
-      <height>26</height>
+      <height>27</height>
       <name>Header</name>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -102,7 +101,7 @@
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>302</width>
+      <width>323</width>
       <border_style>0</border_style>
       <rules />
       <border_width>1</border_width>
@@ -117,14 +116,14 @@
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
       <macros>
         <include_parent_macros>true</include_parent_macros>
-        <DacNumber>$(name)</DacNumber>
+        <dac>1</dac>
       </macros>
       <visible>true</visible>
       <wuid>-44e60fd:14b2c12d03f:-7921</wuid>
       <auto_size>true</auto_size>
       <scripts />
       <zoom_to_fit>false</zoom_to_fit>
-      <height>26</height>
+      <height>27</height>
       <name>1</name>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -144,7 +143,7 @@
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>302</width>
+      <width>323</width>
       <border_style>0</border_style>
       <rules />
       <border_width>1</border_width>
@@ -159,14 +158,14 @@
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
       <macros>
         <include_parent_macros>true</include_parent_macros>
-        <DacNumber>$(name)</DacNumber>
+        <dac>2</dac>
       </macros>
       <visible>true</visible>
       <wuid>-44e60fd:14b2c12d03f:-7791</wuid>
       <auto_size>true</auto_size>
       <scripts />
       <zoom_to_fit>false</zoom_to_fit>
-      <height>26</height>
+      <height>27</height>
       <name>2</name>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -186,7 +185,7 @@
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>302</width>
+      <width>323</width>
       <border_style>0</border_style>
       <rules />
       <border_width>1</border_width>
@@ -201,14 +200,14 @@
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
       <macros>
         <include_parent_macros>true</include_parent_macros>
-        <DacNumber>$(name)</DacNumber>
+        <dac>3</dac>
       </macros>
       <visible>true</visible>
       <wuid>-44e60fd:14b2c12d03f:-7787</wuid>
       <auto_size>true</auto_size>
       <scripts />
       <zoom_to_fit>false</zoom_to_fit>
-      <height>26</height>
+      <height>27</height>
       <name>3</name>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -228,7 +227,7 @@
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>302</width>
+      <width>323</width>
       <border_style>0</border_style>
       <rules />
       <border_width>1</border_width>
@@ -243,14 +242,14 @@
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
       <macros>
         <include_parent_macros>true</include_parent_macros>
-        <DacNumber>$(name)</DacNumber>
+        <dac>4</dac>
       </macros>
       <visible>true</visible>
       <wuid>-44e60fd:14b2c12d03f:-779b</wuid>
       <auto_size>true</auto_size>
       <scripts />
       <zoom_to_fit>false</zoom_to_fit>
-      <height>26</height>
+      <height>27</height>
       <name>4</name>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -270,7 +269,7 @@
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>302</width>
+      <width>323</width>
       <border_style>0</border_style>
       <rules />
       <border_width>1</border_width>
@@ -288,7 +287,7 @@
       <name>Grid Layout</name>
       <fill_grids>false</fill_grids>
       <widget_type>Grid Layout</widget_type>
-      <grid_gap>1</grid_gap>
+      <grid_gap>0</grid_gap>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -329,7 +328,7 @@
     </border_color>
     <y>0</y>
     <actions hook="false" hook_all="false" />
-    <x>305</x>
+    <x>324</x>
     <tooltip></tooltip>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
       <macros>
@@ -620,7 +619,7 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>117</width>
+    <width>135</width>
     <border_style>0</border_style>
     <rules />
     <fc>false</fc>
@@ -631,16 +630,17 @@ $(pv_value)</tooltip>
     </border_color>
     <y>0</y>
     <actions hook="false" hook_all="false" />
-    <x>321</x>
+    <x>338</x>
     <tooltip></tooltip>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
       <macros>
         <include_parent_macros>true</include_parent_macros>
+        <dac>All</dac>
       </macros>
       <visible>true</visible>
       <wuid>-44e60fd:14b2c12d03f:-726f</wuid>
       <scripts />
-      <height>58</height>
+      <height>59</height>
       <name>set all channels</name>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -660,7 +660,7 @@ $(pv_value)</tooltip>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>117</width>
+      <width>138</width>
       <border_style>13</border_style>
       <rules />
       <fc>false</fc>
@@ -671,7 +671,7 @@ $(pv_value)</tooltip>
       </border_color>
       <y>51</y>
       <actions hook="false" hook_all="false" />
-      <x>0</x>
+      <x>-4</x>
       <tooltip></tooltip>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <macros>
@@ -682,7 +682,7 @@ $(pv_value)</tooltip>
         <auto_size>true</auto_size>
         <scripts />
         <zoom_to_fit>false</zoom_to_fit>
-        <height>27</height>
+        <height>28</height>
         <name>Linking Container</name>
         <scale_options>
           <width_scalable>true</width_scalable>
@@ -702,7 +702,7 @@ $(pv_value)</tooltip>
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
         </font>
-        <width>86</width>
+        <width>107</width>
         <border_style>3</border_style>
         <rules />
         <border_width>1</border_width>
@@ -722,6 +722,6 @@ $(pv_value)</tooltip>
     <name>Grid Layout</name>
     <fill_grids>false</fill_grids>
     <widget_type>Grid Layout</widget_type>
-    <grid_gap>2</grid_gap>
+    <grid_gap>0</grid_gap>
   </widget>
 </display>

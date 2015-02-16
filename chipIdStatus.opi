@@ -188,16 +188,13 @@ $(pv_value)</tooltip>
     </actions>
     <x>55</x>
     <tooltip></tooltip>
-    <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <border_alarm_sensitive>true</border_alarm_sensitive>
       <visible>true</visible>
-      <vertical_alignment>1</vertical_alignment>
-      <show_units>false</show_units>
       <wuid>-44e60fd:14b2c12d03f:4872</wuid>
-      <auto_size>false</auto_size>
-      <rotation_angle>0.0</rotation_angle>
       <scripts />
       <height>40</height>
+      <style>0</style>
       <name>Label</name>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <scale_options>
@@ -205,9 +202,6 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <format_type>3</format_type>
-      <precision_from_pv>false</precision_from_pv>
-      <transparent>true</transparent>
       <pv_name></pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
@@ -215,27 +209,36 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <widget_type>Text Update</widget_type>
+      <widget_type>Action Button</widget_type>
       <enabled>true</enabled>
       <text>$(chipIdColumnHex)</text>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <precision>0</precision>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="1">Default Bold</opifont.name>
       </font>
       <width>40</width>
       <border_style>0</border_style>
+      <push_action_index>0</push_action_index>
+      <image></image>
       <rules />
       <pv_value />
+      <toggle_button>false</toggle_button>
       <border_width>0</border_width>
       <border_color>
         <color red="0" green="128" blue="255" />
       </border_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <actions hook="false" hook_all="false" />
       <y>0</y>
-      <wrap_words>false</wrap_words>
-      <tooltip>$(chipIdColumnHex)</tooltip>
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>apfelColumn.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+          </macros>
+          <replace>2</replace>
+          <description>column</description>
+        </action>
+      </actions>
+      <tooltip>show $(chipIdColumnHex)</tooltip>
       <x>0</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
@@ -296,16 +299,13 @@ $(pv_value)</tooltip>
     </actions>
     <x>0</x>
     <tooltip></tooltip>
-    <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <border_alarm_sensitive>true</border_alarm_sensitive>
       <visible>true</visible>
-      <vertical_alignment>1</vertical_alignment>
-      <show_units>false</show_units>
       <wuid>-44e60fd:14b2c12d03f:-24f8</wuid>
-      <auto_size>false</auto_size>
-      <rotation_angle>0.0</rotation_angle>
       <scripts />
       <height>40</height>
+      <style>0</style>
       <name>Label</name>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <scale_options>
@@ -313,9 +313,6 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <format_type>3</format_type>
-      <precision_from_pv>false</precision_from_pv>
-      <transparent>true</transparent>
       <pv_name></pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
@@ -323,27 +320,36 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <widget_type>Text Update</widget_type>
+      <widget_type>Action Button</widget_type>
       <enabled>true</enabled>
       <text>$(chipIdRowHex)</text>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <precision>0</precision>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="1">Default Bold</opifont.name>
       </font>
       <width>40</width>
       <border_style>0</border_style>
+      <push_action_index>0</push_action_index>
+      <image></image>
       <rules />
       <pv_value />
+      <toggle_button>false</toggle_button>
       <border_width>0</border_width>
       <border_color>
         <color red="0" green="128" blue="255" />
       </border_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <actions hook="false" hook_all="false" />
       <y>0</y>
-      <wrap_words>false</wrap_words>
-      <tooltip>$(chipIdRowHex)</tooltip>
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>apfelRow.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+          </macros>
+          <replace>2</replace>
+          <description>Row</description>
+        </action>
+      </actions>
+      <tooltip>show $(chipIdRowHex)</tooltip>
       <x>0</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
