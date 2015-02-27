@@ -59,7 +59,7 @@
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="1">Default Bold</opifont.name>
     </font>
-    <width>323</width>
+    <width>343</width>
     <border_style>0</border_style>
     <rules />
     <fc>false</fc>
@@ -153,6 +153,93 @@
         <x>0</x>
       </widget>
     </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0.0">
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <visible>false</visible>
+      <fill_level>0.0</fill_level>
+      <line_color>
+        <color name="Header_Background" red="77" green="77" blue="77" />
+      </line_color>
+      <wuid>b8fa596:14bc1696071:69c3</wuid>
+      <bg_gradient_color>
+        <color red="255" green="255" blue="255" />
+      </bg_gradient_color>
+      <scripts />
+      <height>20</height>
+      <anti_alias>true</anti_alias>
+      <name>LED</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <alpha>255</alpha>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <transparent>false</transparent>
+      <pv_name></pv_name>
+      <background_color>
+        <color name="Invalid" red="255" green="0" blue="255" />
+      </background_color>
+      <foreground_color>
+        <color name="Header_Background" red="77" green="77" blue="77" />
+      </foreground_color>
+      <widget_type>Ellipse</widget_type>
+      <enabled>false</enabled>
+      <fg_gradient_color>
+        <color red="255" green="255" blue="255" />
+      </fg_gradient_color>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      </font>
+      <width>20</width>
+      <line_style>0</line_style>
+      <border_style>0</border_style>
+      <rules>
+        <rule name="Status" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color red="240" green="240" blue="240" />
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 1 &amp;&amp; pv1 == 0">
+            <value>
+              <color red="240" green="240" blue="240" />
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 1 &amp;&amp; pv1 == 1">
+            <value>
+              <color red="240" green="240" blue="240" />
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 15">
+            <value>
+              <color red="240" green="240" blue="240" />
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color red="240" green="240" blue="240" />
+            </value>
+          </exp>
+          <pv trig="true">$(pv)</pv>
+          <pv trig="true">sim://flipflop(0.3)</pv>
+        </rule>
+      </rules>
+      <pv_value />
+      <border_width>1</border_width>
+      <line_width>1</line_width>
+      <horizontal_fill>true</horizontal_fill>
+      <border_color>
+        <color name="Header_Background" red="77" green="77" blue="77" />
+      </border_color>
+      <actions hook="false" hook_all="false" />
+      <y>0</y>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <x>17</x>
+      <gradient>false</gradient>
+    </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -191,7 +278,7 @@
       </border_color>
       <y>0</y>
       <actions hook="false" hook_all="false" />
-      <x>17</x>
+      <x>38</x>
       <tooltip></tooltip>
       <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
         <visible>true</visible>
@@ -354,7 +441,7 @@ $(pv_value)</tooltip>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>105</width>
+      <width>125</width>
       <border_style>0</border_style>
       <rules />
       <border_width>1</border_width>
@@ -363,7 +450,7 @@ $(pv_value)</tooltip>
       </border_color>
       <y>0</y>
       <actions hook="false" hook_all="false" />
-      <x>217</x>
+      <x>238</x>
       <tooltip></tooltip>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
@@ -380,6 +467,8 @@ $(pv_value)</tooltip>
       <include_parent_macros>true</include_parent_macros>
       <dacGet>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac)$(SUFFIX)</dacGet>
       <dacSet>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):set$(SUFFIX)</dacSet>
+      <dacGetHex>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):hex$(SUFFIX)</dacGetHex>
+      <dacReadStatus>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):read:status$(SUFFIX)</dacReadStatus>
     </macros>
     <visible>true</visible>
     <wuid>-44e60fd:14b2c12d03f:-7d80</wuid>
@@ -404,7 +493,7 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="1">Default Bold</opifont.name>
     </font>
-    <width>323</width>
+    <width>364</width>
     <border_style>0</border_style>
     <rules />
     <fc>false</fc>
@@ -504,6 +593,134 @@ $(pv_value)</tooltip>
         <include_parent_macros>true</include_parent_macros>
       </macros>
       <visible>true</visible>
+      <wuid>b8fa596:14bc1696071:729c</wuid>
+      <scripts />
+      <height>20</height>
+      <name>Grouping Container</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <transparent>true</transparent>
+      <show_scrollbar>false</show_scrollbar>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <enabled>true</enabled>
+      <widget_type>Grouping Container</widget_type>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      </font>
+      <width>20</width>
+      <border_style>0</border_style>
+      <rules />
+      <fc>false</fc>
+      <lock_children>false</lock_children>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>0</y>
+      <actions hook="false" hook_all="false" />
+      <x>17</x>
+      <tooltip></tooltip>
+      <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0.0">
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <visible>true</visible>
+        <fill_level>0.0</fill_level>
+        <line_color>
+          <color name="Header_Background" red="77" green="77" blue="77" />
+        </line_color>
+        <wuid>b8fa596:14bc1696071:65b3</wuid>
+        <bg_gradient_color>
+          <color red="255" green="255" blue="255" />
+        </bg_gradient_color>
+        <scripts />
+        <height>16</height>
+        <anti_alias>true</anti_alias>
+        <name>LED</name>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <alpha>255</alpha>
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>true</keep_wh_ratio>
+        </scale_options>
+        <transparent>false</transparent>
+        <pv_name>$(dacReadStatus)</pv_name>
+        <background_color>
+          <color name="Invalid" red="255" green="0" blue="255" />
+        </background_color>
+        <foreground_color>
+          <color name="Header_Background" red="77" green="77" blue="77" />
+        </foreground_color>
+        <widget_type>Ellipse</widget_type>
+        <enabled>true</enabled>
+        <fg_gradient_color>
+          <color red="255" green="255" blue="255" />
+        </fg_gradient_color>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <font>
+          <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+        </font>
+        <width>16</width>
+        <line_style>0</line_style>
+        <border_style>0</border_style>
+        <rules>
+          <rule name="Status" prop_id="background_color" out_exp="false">
+            <exp bool_exp="pv0 == 0">
+              <value>
+                <color red="240" green="240" blue="240" />
+              </value>
+            </exp>
+            <exp bool_exp="pv0 == 1 &amp;&amp; pv1 == 0">
+              <value>
+                <color red="240" green="240" blue="240" />
+              </value>
+            </exp>
+            <exp bool_exp="pv0 == 1 &amp;&amp; pv1 == 1">
+              <value>
+                <color red="240" green="240" blue="240" />
+              </value>
+            </exp>
+            <exp bool_exp="pv0 == 15">
+              <value>
+                <color red="240" green="240" blue="240" />
+              </value>
+            </exp>
+            <exp bool_exp="pv0 == 10">
+              <value>
+                <color red="240" green="240" blue="240" />
+              </value>
+            </exp>
+            <pv trig="true">$(pv_name)</pv>
+            <pv trig="true">sim://flipflop(0.3)</pv>
+          </rule>
+        </rules>
+        <pv_value />
+        <border_width>1</border_width>
+        <line_width>1</line_width>
+        <horizontal_fill>true</horizontal_fill>
+        <border_color>
+          <color name="Header_Background" red="77" green="77" blue="77" />
+        </border_color>
+        <actions hook="false" hook_all="false" />
+        <y>4</y>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <x>2</x>
+        <gradient>false</gradient>
+      </widget>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+      </macros>
+      <visible>true</visible>
       <wuid>-44e60fd:14b2c12d03f:-7742</wuid>
       <scripts />
       <height>25</height>
@@ -537,7 +754,7 @@ $(pv_value)</tooltip>
       </border_color>
       <y>0</y>
       <actions hook="false" hook_all="false" />
-      <x>17</x>
+      <x>38</x>
       <tooltip></tooltip>
       <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
         <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -561,7 +778,7 @@ $(pv_value)</tooltip>
         <off_color>
           <color red="0" green="100" blue="0" />
         </off_color>
-        <pv_name>$(dacGet)</pv_name>
+        <pv_name>$(dacGetHex)</pv_name>
         <background_color>
           <color red="240" green="240" blue="240" />
         </background_color>
@@ -612,7 +829,7 @@ $(pv_value)</tooltip>
         <format_type>3</format_type>
         <precision_from_pv>false</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(dacGet)</pv_name>
+        <pv_name>$(dacGetHex)</pv_name>
         <background_color>
           <color name="Read_Background" red="240" green="240" blue="240" />
         </background_color>
@@ -733,7 +950,7 @@ $(pv_value)</tooltip>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>105</width>
+      <width>125</width>
       <border_style>0</border_style>
       <rules />
       <border_width>1</border_width>
@@ -742,7 +959,7 @@ $(pv_value)</tooltip>
       </border_color>
       <y>0</y>
       <actions hook="false" hook_all="false" />
-      <x>217</x>
+      <x>238</x>
       <tooltip></tooltip>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">

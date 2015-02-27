@@ -3,6 +3,10 @@
   <auto_zoom_to_fit_all>true</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
+    <PREFIX>PANDA:</PREFIX>
+    <SUFFIX></SUFFIX>
+    <NAME>APFEL</NAME>
+    <ADDRESS>A:ps1:s1</ADDRESS>
   </macros>
   <wuid>-44e60fd:14b2c12d03f:-2cac</wuid>
   <boy_version>3.2.16.20140409</boy_version>
@@ -46,7 +50,7 @@
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name></pv_name>
+    <pv_name>$(PREFIX)$(NAME):$(ADDRESS):listId$(SUFFIX)</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -75,7 +79,7 @@
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
         <pv_name>$(pv_name)</pv_name>
-        <value>1</value>
+        <value>254</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description>Refresh Status</description>
