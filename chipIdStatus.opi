@@ -412,7 +412,7 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
       <border_alarm_sensitive>true</border_alarm_sensitive>
-      <visible>true</visible>
+      <visible>false</visible>
       <wuid>1d5f0dd1:14b314d7666:-3f80</wuid>
       <scripts />
       <square_led>false</square_led>
@@ -449,7 +449,18 @@ $(pv_value)</tooltip>
       <width>40</width>
       <border_style>0</border_style>
       <effect_3d>true</effect_3d>
-      <rules />
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&lt;4">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="pv&gt;=4">
+            <value>false</value>
+          </exp>
+          <pv trig="true">$(pv_name).SEVR</pv>
+          <pv trig="true">sim://flipflop(30)</pv>
+        </rule>
+      </rules>
       <pv_value />
       <bit>-1</bit>
       <border_width>1</border_width>

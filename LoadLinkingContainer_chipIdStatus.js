@@ -1,9 +1,41 @@
 importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
 
+			var nColumns = 0x2;
+			var chipIdMin = 0x1;
+			var nChips = 0x8;
+			var stepSize = 0x1;
+			
+			var   nChipsIndex = 0;
+//			var nColumnsIndex = 0;
+//			var  chipMinIndex = 1;
+//			var stepSizeIndex = 3;
+//			var  opiPathIndex = 4;
+//			var  triggerDisplayResizeIndex = 5;
+			
+			   nChips = PVUtil.getLong (pvs[  nChipsIndex]);
+//			 nColumns = PVUtil.getLong (pvs[nColumnsIndex]);
+//			chipIdMin = PVUtil.getLong (pvs[ chipMinIndex]);
+//			var stepSize = PVUtil.getLong (pvs[stepSizeIndex]);
+//			var opiPath  = PVUtil.getString(pvs[opiPathIndex]);
+
+var number;
+
+
+
 widget.removeAllChildren();
 
 for(var row=-1; row<=0xF; row++){
 	for(var column=-1; column<=0xF; column++){
+		number = (column +  row * 16);
+		if (number > nChips) 
+	    {
+	       	break;
+		}
+		if ( 0xF > nChips && column > nChips  )
+		{
+			break;
+		}
+			
 		//create linking container
 		var linkingContainer = WidgetUtil.createWidgetModel("org.csstudio.opibuilder.widgets.linkingContainer");	
 		linkingContainer.setPropertyValue("opi_file", "chipIdStatus.opi");
@@ -50,7 +82,6 @@ for(var row=-1; row<=0xF; row++){
 		}
 
 		//add macros
-		var number = (column +  row * 16);
 		linkingContainer.addMacro("chipId", number);
 		linkingContainer.addMacro("chipIdHex", ("0x" + number.toString(16).toUpperCase()));
 		linkingContainer.addMacro("chipIdLow", column);
@@ -61,10 +92,14 @@ for(var row=-1; row<=0xF; row++){
 		//add linking container to widget
 		widget.addChildToBottom(linkingContainer);	
 	}
+		if (number > nChips) 
+	        {
+	        	break;
+			}
 }
 
 var gridLayout = WidgetUtil.createWidgetModel("org.csstudio.opibuilder.widgets.gridLayout");
-gridLayout.setPropertyValue("number_of_columns", (16 + 1));	
+gridLayout.setPropertyValue("number_of_columns", (nChips%16 + 2));	
 gridLayout.setPropertyValue("grid_gap", 1);	
 widget.addChildToBottom(gridLayout);
 widget.performAutosize();
