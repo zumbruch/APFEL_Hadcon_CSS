@@ -17,11 +17,6 @@ for(var row=-1; row<=0xF; row++){
 			linkingContainer.setPropertyValue("group_name", "corner");
 			linkingContainer.setPropertyValue("visible", false);
         }
-        if (0xF == column && 0xF == row ) // corner
-        {
-			linkingContainer.setPropertyValue("group_name", "corner");
-			linkingContainer.setPropertyValue("visible", false);
-        }
         if (0x0 == column && 0x0 == row ) // corner
         {
 			linkingContainer.setPropertyValue("group_name", "corner");
@@ -45,6 +40,12 @@ for(var row=-1; row<=0xF; row++){
 		}
 		else
 		{
+	        if (0xF == column && 0xF == row ) // corner
+	        {
+				linkingContainer.setPropertyValue("border_style", "1");
+				linkingContainer.setPropertyValue("border_width", "2");
+				linkingContainer.setPropertyValue("border_color",ColorFontUtil.getColorFromRGB(0,128,255));
+	        }
 			linkingContainer.setPropertyValue("group_name", "roundStatus");
 		}
 

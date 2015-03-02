@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
-  <auto_zoom_to_fit_all>true</auto_zoom_to_fit_all>
+  <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
@@ -40,7 +40,7 @@
     <wuid>-1c476b0f:14b921ec6cd:7497</wuid>
     <auto_size>true</auto_size>
     <scripts />
-    <zoom_to_fit>true</zoom_to_fit>
+    <zoom_to_fit>false</zoom_to_fit>
     <height>309</height>
     <name>Linking Container</name>
     <scale_options>
@@ -61,7 +61,7 @@
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>486</width>
+    <width>520</width>
     <border_style>3</border_style>
     <rules />
     <border_width>1</border_width>

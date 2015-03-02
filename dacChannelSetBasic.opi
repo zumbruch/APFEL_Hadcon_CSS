@@ -413,7 +413,7 @@ $(pv_value)</tooltip>
       <gradient>false</gradient>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
-      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
       <visible>true</visible>
       <minimum>-1.7976931348623157E308</minimum>
       <vertical_alignment>1</vertical_alignment>
@@ -447,12 +447,12 @@ $(pv_value)</tooltip>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
       <width>84</width>
-      <border_style>0</border_style>
+      <border_style>15</border_style>
       <format>0</format>
       <rules />
       <pv_value />
       <horizontal_buttons_layout>false</horizontal_buttons_layout>
-      <border_width>1</border_width>
+      <border_width>2</border_width>
       <maximum>1.7976931348623157E308</maximum>
       <limits_from_pv>true</limits_from_pv>
       <border_color>
@@ -466,7 +466,7 @@ $(pv_value)</tooltip>
       <x>0</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
       <visible>true</visible>
       <multiline_input>false</multiline_input>
       <auto_size>false</auto_size>
@@ -484,9 +484,9 @@ $(pv_value)</tooltip>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
       <width>63</width>
-      <border_style>0</border_style>
+      <border_style>15</border_style>
       <pv_value />
-      <border_width>1</border_width>
+      <border_width>2</border_width>
       <show_units>true</show_units>
       <wuid>b8fa596:14bc1696071:-7d72</wuid>
       <rotation_angle>0.0</rotation_angle>
@@ -729,7 +729,7 @@ $(pv_value)</tooltip>
       <gradient>false</gradient>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
-      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
       <visible>true</visible>
       <minimum>-1.7976931348623157E308</minimum>
       <vertical_alignment>1</vertical_alignment>
@@ -763,12 +763,12 @@ $(pv_value)</tooltip>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
       <width>84</width>
-      <border_style>0</border_style>
+      <border_style>15</border_style>
       <format>2</format>
       <rules />
       <pv_value />
       <horizontal_buttons_layout>false</horizontal_buttons_layout>
-      <border_width>1</border_width>
+      <border_width>2</border_width>
       <maximum>1.7976931348623157E308</maximum>
       <limits_from_pv>false</limits_from_pv>
       <border_color>
@@ -782,7 +782,7 @@ $(pv_value)</tooltip>
       <x>0</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
       <visible>true</visible>
       <multiline_input>false</multiline_input>
       <auto_size>false</auto_size>
@@ -800,10 +800,10 @@ $(pv_value)</tooltip>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
       <width>63</width>
-      <border_style>0</border_style>
+      <border_style>15</border_style>
       <pv_value />
       <maximum>1.7976931348623157E308</maximum>
-      <border_width>1</border_width>
+      <border_width>2</border_width>
       <minimum>-1.7976931348623157E308</minimum>
       <show_units>false</show_units>
       <wuid>b8fa596:14bc1696071:-7dcd</wuid>
