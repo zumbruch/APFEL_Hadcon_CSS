@@ -5,7 +5,7 @@
     <include_parent_macros>true</include_parent_macros>
     <chipIdMin>1</chipIdMin>
     <nColumns>2</nColumns>
-    <nChips>8</nChips>
+    <nChips>4</nChips>
     <stepSize>1</stepSize>
     <PREFIX>PANDA:</PREFIX>
     <SUFFIX></SUFFIX>
@@ -35,7 +35,7 @@ widget.performAutosize();]]></scriptText>
   </foreground_color>
   <widget_type>Display</widget_type>
   <show_close_button>true</show_close_button>
-  <width>1000</width>
+  <width>1040</width>
   <rules />
   <show_edit_range>true</show_edit_range>
   <grid_space>6</grid_space>
@@ -757,7 +757,7 @@ $(pv_value)</tooltip>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>502</width>
+      <width>517</width>
       <border_style>3</border_style>
       <rules />
       <border_width>1</border_width>
