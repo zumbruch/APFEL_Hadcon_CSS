@@ -20,7 +20,7 @@
   </foreground_color>
   <widget_type>Display</widget_type>
   <show_close_button>true</show_close_button>
-  <width>150</width>
+  <width>165</width>
   <rules />
   <show_edit_range>true</show_edit_range>
   <grid_space>6</grid_space>
@@ -306,7 +306,7 @@ $(pv_value)</tooltip>
       <x>57</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
-      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
       <visible>true</visible>
       <wuid>-130c1fde:14ba13b14fd:3195</wuid>
       <scripts />
@@ -362,7 +362,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <visible>true</visible>
-    <minimum>-Infinity</minimum>
+    <minimum>-1.7976931348623157E308</minimum>
     <vertical_alignment>1</vertical_alignment>
     <wuid>b8fa596:14bc1696071:-5129</wuid>
     <scripts />
@@ -400,7 +400,7 @@ $(pv_value)</tooltip>
     <pv_value />
     <horizontal_buttons_layout>false</horizontal_buttons_layout>
     <border_width>1</border_width>
-    <maximum>Infinity</maximum>
+    <maximum>1.7976931348623157E308</maximum>
     <limits_from_pv>true</limits_from_pv>
     <border_color>
       <color name="WritePV_Background" red="128" green="255" blue="255" />
