@@ -37,7 +37,7 @@
       <include_parent_macros>true</include_parent_macros>
       <pv>$(chipId)</pv>
     </macros>
-    <visible>true</visible>
+    <visible>false</visible>
     <wuid>5b86be96:14b783209eb:-268</wuid>
     <auto_size>true</auto_size>
     <scripts />
@@ -57,7 +57,7 @@
       <color red="240" green="240" blue="240" />
     </background_color>
     <group_name>2-digit Hex</group_name>
-    <enabled>true</enabled>
+    <enabled>false</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
