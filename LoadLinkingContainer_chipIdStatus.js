@@ -1,22 +1,8 @@
 importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
 
-			var nColumns = 0x2;
-			var chipIdMin = 0x1;
-			var nChips = 0x8;
-			var stepSize = 0x1;
-			
-			var   nChipsIndex = 0;
-//			var nColumnsIndex = 0;
-//			var  chipMinIndex = 1;
-//			var stepSizeIndex = 3;
-//			var  opiPathIndex = 4;
-//			var  triggerDisplayResizeIndex = 5;
-			
-			   nChips = PVUtil.getLong (pvs[  nChipsIndex]);
-//			 nColumns = PVUtil.getLong (pvs[nColumnsIndex]);
-//			chipIdMin = PVUtil.getLong (pvs[ chipMinIndex]);
-//			var stepSize = PVUtil.getLong (pvs[stepSizeIndex]);
-//			var opiPath  = PVUtil.getString(pvs[opiPathIndex]);
+		var nChips = 0x8;
+		var   nChipsIndex = 0;
+		nChips = PVUtil.getLong (pvs[  nChipsIndex]);
 
 var number;
 
@@ -26,14 +12,14 @@ widget.removeAllChildren();
 
 for(var row=-1; row<=0xF; row++){
 	for(var column=-1; column<=0xF; column++){
-		number = (column +  row * 16);
+		number = (Math.max(0,column) +  Math.max(0,row) * 16);
 		if (number > nChips) 
 	    {
-	       	break;
+	       	continue;
 		}
-		if ( 0xF > nChips && column > nChips  )
+		if ( nChips <= 16 && column > nChips  )
 		{
-			break;
+			continue;
 		}
 			
 		//create linking container
@@ -92,14 +78,14 @@ for(var row=-1; row<=0xF; row++){
 		//add linking container to widget
 		widget.addChildToBottom(linkingContainer);	
 	}
-		if (number > nChips) 
-	        {
-	        	break;
-			}
+	if (number > nChips) 
+	{
+	    	continue;
+	}
 }
 
 var gridLayout = WidgetUtil.createWidgetModel("org.csstudio.opibuilder.widgets.gridLayout");
-gridLayout.setPropertyValue("number_of_columns", (nChips%16 + 2));	
+gridLayout.setPropertyValue("number_of_columns", (Math.min(Number(nChips),Number(0xF)) + 2));	
 gridLayout.setPropertyValue("grid_gap", 1);	
 widget.addChildToBottom(gridLayout);
 widget.performAutosize();
