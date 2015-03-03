@@ -10,7 +10,7 @@
     <PREFIX>PANDA:</PREFIX>
     <SUFFIX></SUFFIX>
     <NAME>APFEL</NAME>
-    <ADDRESS>A:ps1:s1</ADDRESS>
+    <ADDRESS>$(portName):ps$(pinSet):s$(sideSelect)</ADDRESS>
   </macros>
   <wuid>2da4dada:138bb0b2666:-7ff6</wuid>
   <boy_version>3.2.16.20140409</boy_version>
@@ -74,7 +74,7 @@ widget.performAutosize();]]></scriptText>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>582</width>
+    <width>609</width>
     <border_style>0</border_style>
     <rules />
     <fc>false</fc>
@@ -585,16 +585,16 @@ $(pv_value)</tooltip>
       </foreground_color>
       <widget_type>Action Button</widget_type>
       <enabled>true</enabled>
-      <text>Refresh&#xD;
-Status</text>
+      <text>Status&#xD;
+Refresh</text>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="1">Default Bold</opifont.name>
       </font>
-      <width>59</width>
+      <width>83</width>
       <border_style>0</border_style>
       <push_action_index>0</push_action_index>
-      <image></image>
+      <image>Pictures/reset.png</image>
       <rules />
       <pv_value />
       <toggle_button>false</toggle_button>
@@ -639,7 +639,8 @@ $(pv_value)</tooltip>
       </foreground_color>
       <widget_type>Action Button</widget_type>
       <enabled>true</enabled>
-      <text>Overview</text>
+      <text>Status&#xD;
+Overview</text>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="1">Default Bold</opifont.name>
@@ -668,7 +669,7 @@ $(pv_value)</tooltip>
       </actions>
       <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-      <x>501</x>
+      <x>528</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
       <wuid>5b86be96:14b824665c4:-7322</wuid>
@@ -715,7 +716,7 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>484</width>
+    <width>518</width>
     <border_style>0</border_style>
     <rules />
     <fc>false</fc>

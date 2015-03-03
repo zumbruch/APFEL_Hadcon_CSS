@@ -360,7 +360,7 @@
           <font>
             <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
           </font>
-          <width>85</width>
+          <width>112</width>
           <border_style>0</border_style>
           <effect_3d>true</effect_3d>
           <rules />
@@ -497,7 +497,7 @@ $(pv_value)</tooltip>
             <width>95</width>
             <border_style>0</border_style>
             <push_action_index>0</push_action_index>
-            <image></image>
+            <image>Pictures/reset.png</image>
             <rules />
             <pv_value />
             <toggle_button>false</toggle_button>
