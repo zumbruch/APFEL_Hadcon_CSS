@@ -3,9 +3,6 @@
   <auto_zoom_to_fit_all>true</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <PREFIX>PANDA:</PREFIX>
-    <SUFFIX></SUFFIX>
-    <NAME>APFEL</NAME>
     <nChips>4</nChips>
   </macros>
   <wuid>-44e60fd:14b2c12d03f:-2cac</wuid>

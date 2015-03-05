@@ -7,10 +7,6 @@
     <nColumns>2</nColumns>
     <nChips>4</nChips>
     <stepSize>1</stepSize>
-    <PREFIX>PANDA:</PREFIX>
-    <SUFFIX></SUFFIX>
-    <NAME>APFEL</NAME>
-    <ADDRESS>$(portName):ps$(pinSet):s$(sideSelect)</ADDRESS>
   </macros>
   <wuid>2da4dada:138bb0b2666:-7ff6</wuid>
   <boy_version>3.2.16.20140409</boy_version>
