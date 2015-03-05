@@ -76,7 +76,6 @@
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <pv>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):set$(SUFFIX)</pv>
     </macros>
     <visible>true</visible>
     <wuid>-44e60fd:14b2c12d03f:-7633</wuid>
@@ -118,7 +117,6 @@
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <pv>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):set:hex$(SUFFIX)</pv>
     </macros>
     <visible>true</visible>
     <wuid>5b86be96:14b783209eb:-7e3c</wuid>

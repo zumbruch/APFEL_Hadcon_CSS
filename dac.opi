@@ -757,7 +757,8 @@ $(pv_value)</tooltip>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <dac>All</dac>
-            <pv>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):set$(SUFFIX)</pv>
+            <pv_deci>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):set$(SUFFIX)</pv_deci>
+            <pv_hex>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):set:hex$(SUFFIX)</pv_hex>
           </macros>
           <visible>true</visible>
           <wuid>-44e60fd:14b2c12d03f:-72ef</wuid>
