@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display typeId="org.csstudio.opibuilder.Display" version="1.0">
+  <auto_zoom_to_fit_all>true</auto_zoom_to_fit_all>
+  <macros>
+    <include_parent_macros>true</include_parent_macros>
+  </macros>
+  <wuid>-3bda0168:13b8fa7e601:-14ed</wuid>
+  <boy_version>3.1.3.20121206</boy_version>
+  <scripts />
+  <show_ruler>true</show_ruler>
+  <height>700</height>
+  <name></name>
+  <snap_to_geometry>true</snap_to_geometry>
+  <show_grid>true</show_grid>
+  <background_color>
+    <color red="240" green="240" blue="240" />
+  </background_color>
+  <foreground_color>
+    <color red="192" green="192" blue="192" />
+  </foreground_color>
+  <widget_type>Display</widget_type>
+  <show_close_button>true</show_close_button>
+  <width>600</width>
+  <rules />
+  <show_edit_range>true</show_edit_range>
+  <grid_space>6</grid_space>
+  <auto_scale_widgets>
+    <auto_scale_widgets>false</auto_scale_widgets>
+    <min_width>-1</min_width>
+    <min_height>-1</min_height>
+  </auto_scale_widgets>
+  <actions hook="false" hook_all="false" />
+  <y>-1</y>
+  <x>-1</x>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0">
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+      <HADCON>dreamp04</HADCON>
+      <NAME></NAME>
+      <PREFIX></PREFIX>
+      <SUFFIX></SUFFIX>
+    </macros>
+    <visible>true</visible>
+    <wuid>-3bda0168:13ba9533a6d:305c</wuid>
+    <scripts />
+    <height>704</height>
+    <name>ports</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>true</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>Grouping Container</widget_type>
+    <font>
+      <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+    </font>
+    <width>587</width>
+    <border_style>0</border_style>
+    <rules />
+    <lock_children>false</lock_children>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>0</y>
+    <actions hook="false" hook_all="false" />
+    <x>0</x>
+    <tooltip></tooltip>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+      <visible>true</visible>
+      <vertical_alignment>1</vertical_alignment>
+      <wuid>-3bda0168:13ba9533a6d:290a</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <height>19</height>
+      <name>Label</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <transparent>false</transparent>
+      <show_scrollbar>false</show_scrollbar>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Label</widget_type>
+      <enabled>true</enabled>
+      <text>$(HADCON)$(NAME)</text>
+      <font>
+        <opifont.name fontName="Tahoma" height="12" style="1">Header 3</opifont.name>
+      </font>
+      <width>167</width>
+      <border_style>0</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions hook="false" hook_all="false" />
+      <y>0</y>
+      <wrap_words>true</wrap_words>
+      <tooltip></tooltip>
+      <x>0</x>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+      </macros>
+      <visible>true</visible>
+      <wuid>-3bda0168:13ba9533a6d:-4b1d</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>40</height>
+      <name>Title</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Title</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>586</width>
+      <border_style>0</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>21</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PINA</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>3ffa818:13bad66d68e:eb4</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PINA</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>63</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PORTA</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>-560047f2:13bb3245922:-71af</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PORTA_1</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>107</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PINB</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>-560047f2:13bb3245922:-70b7</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PINB_3</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>195</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PORTB</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>-560047f2:13bb3245922:-7133</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PORTB_2</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>151</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PINC</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>-560047f2:13bb3245922:-6fbf</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PINC_5</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>283</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PORTC</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>-560047f2:13bb3245922:-703b</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PORTC_4</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>239</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PIND</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>-560047f2:13bb3245922:-6ec7</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PIND_7</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>371</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PORTD</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>-560047f2:13bb3245922:-6f43</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PORTD_6</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>327</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PINE</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>-560047f2:13bb3245922:-6dcf</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PINE_9</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>459</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PORTE</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>-560047f2:13bb3245922:-6e4b</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PORTE_8</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>415</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PINF</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>-560047f2:13bb3245922:-6cd7</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PINF_11</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>547</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PORTF</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>-560047f2:13bb3245922:-6d53</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PORTF_10</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>503</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PING</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>-560047f2:13bb3245922:-6bd2</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PING_13</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>635</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <RegName>PORTG</RegName>
+        <NAME></NAME>
+        <HADCON>dreamp04</HADCON>
+        <PREFIX></PREFIX>
+        <SUFFIX></SUFFIX>
+      </macros>
+      <visible>true</visible>
+      <wuid>-560047f2:13bb3245922:-6c5b</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>42</height>
+      <name>PORTG_12</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>reg.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Controls</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Tahoma" height="8" style="0">Default</opifont.name>
+      </font>
+      <width>588</width>
+      <border_style>3</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>591</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0">
+      <wuid>-3bda0168:13b8fa7e601:-d12</wuid>
+      <number_of_columns>1</number_of_columns>
+      <name>Grid Layout</name>
+      <fill_grids>false</fill_grids>
+      <widget_type>Grid Layout</widget_type>
+      <grid_gap>2</grid_gap>
+    </widget>
+  </widget>
+</display>
