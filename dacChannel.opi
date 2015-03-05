@@ -675,27 +675,27 @@ $(pv_value)</tooltip>
           <rule name="Status" prop_id="background_color" out_exp="false">
             <exp bool_exp="pv0 == 0">
               <value>
-                <color red="240" green="240" blue="240" />
+                <color name="OK" red="0" green="255" blue="0" />
               </value>
             </exp>
             <exp bool_exp="pv0 == 1 &amp;&amp; pv1 == 0">
               <value>
-                <color red="240" green="240" blue="240" />
+                <color name="Attention" red="255" green="160" blue="0" />
               </value>
             </exp>
             <exp bool_exp="pv0 == 1 &amp;&amp; pv1 == 1">
               <value>
-                <color red="240" green="240" blue="240" />
+                <color red="255" green="255" blue="0" />
               </value>
             </exp>
             <exp bool_exp="pv0 == 15">
               <value>
-                <color red="240" green="240" blue="240" />
+                <color name="Disconnected" red="255" green="0" blue="255" />
               </value>
             </exp>
             <exp bool_exp="pv0 == 10">
               <value>
-                <color red="240" green="240" blue="240" />
+                <color name="WritePV_Background" red="128" green="255" blue="255" />
               </value>
             </exp>
             <pv trig="true">$(pv_name)</pv>
