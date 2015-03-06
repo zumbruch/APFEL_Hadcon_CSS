@@ -361,7 +361,7 @@
           <exp bool_exp="pv0 == 1">
             <value>"HexSet"</value>
           </exp>
-          <pv trig="true">loc://Hex_Deci_$(LCID)$(dac)</pv>
+          <pv trig="true">loc://Hex_Deci_$(LCID)_$(dac)$(chipId)$(ADDRESS)</pv>
         </rule>
       </rules>
       <border_width>1</border_width>
@@ -387,7 +387,7 @@
         <height_scalable>false</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>loc://Hex_Deci_$(LCID)$(dac)</pv_name>
+      <pv_name>loc://Hex_Deci_$(LCID)_$(dac)$(chipId)$(ADDRESS)</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
