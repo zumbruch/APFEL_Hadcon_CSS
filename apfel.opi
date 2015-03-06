@@ -19,7 +19,7 @@ widget.performAutosize();]]></scriptText>
     </path>
   </scripts>
   <show_ruler>true</show_ruler>
-  <height>900</height>
+  <height>550</height>
   <name>Apfel ChipIds port $(portName) ps$(pinSet) s$(sideSelect)</name>
   <snap_to_geometry>true</snap_to_geometry>
   <show_grid>true</show_grid>
@@ -110,7 +110,7 @@ widget.performAutosize();]]></scriptText>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>609</width>
+    <width>632</width>
     <border_style>0</border_style>
     <rules />
     <fc>false</fc>
@@ -681,10 +681,10 @@ Overview</text>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="1">Default Bold</opifont.name>
       </font>
-      <width>80</width>
+      <width>106</width>
       <border_style>0</border_style>
       <push_action_index>0</push_action_index>
-      <image></image>
+      <image>Pictures/81.png</image>
       <rules />
       <pv_value />
       <toggle_button>false</toggle_button>
@@ -705,7 +705,7 @@ Overview</text>
       </actions>
       <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-      <x>528</x>
+      <x>525</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
       <wuid>5b86be96:14b824665c4:-7322</wuid>
