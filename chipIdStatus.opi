@@ -451,13 +451,13 @@ $(pv_value)</tooltip>
       <effect_3d>true</effect_3d>
       <rules>
         <rule name="Visible" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0&lt;4">
+          <exp bool_exp="pvSev0&lt;4">
             <value>true</value>
           </exp>
-          <exp bool_exp="pv&gt;=4">
+          <exp bool_exp="1">
             <value>false</value>
           </exp>
-          <pv trig="true">$(pv_name).SEVR</pv>
+          <pv trig="true">$(pv_name)</pv>
           <pv trig="true">sim://flipflop(30)</pv>
         </rule>
       </rules>

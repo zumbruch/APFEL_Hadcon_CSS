@@ -374,7 +374,7 @@ $(pv_value)</tooltip>
             <border_style>0</border_style>
             <rules />
             <fc>false</fc>
-            <lock_children>true</lock_children>
+            <lock_children>false</lock_children>
             <border_width>1</border_width>
             <border_color>
               <color red="0" green="128" blue="255" />
@@ -383,14 +383,55 @@ $(pv_value)</tooltip>
             <actions hook="false" hook_all="false" />
             <x>0</x>
             <tooltip></tooltip>
+            <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+              <visible>true</visible>
+              <vertical_alignment>1</vertical_alignment>
+              <wuid>321d70aa:14bea6595d9:6433</wuid>
+              <auto_size>false</auto_size>
+              <scripts />
+              <height>22</height>
+              <name>Inactive Label</name>
+              <scale_options>
+                <width_scalable>true</width_scalable>
+                <height_scalable>false</height_scalable>
+                <keep_wh_ratio>false</keep_wh_ratio>
+              </scale_options>
+              <transparent>false</transparent>
+              <background_color>
+                <color red="240" green="240" blue="240" />
+              </background_color>
+              <foreground_color>
+                <color red="128" green="128" blue="128" />
+              </foreground_color>
+              <widget_type>Label</widget_type>
+              <enabled>false</enabled>
+              <text>sideSelect $(sideSelect)</text>
+              <font>
+                <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+              </font>
+              <width>70</width>
+              <border_style>3</border_style>
+              <rules />
+              <border_width>1</border_width>
+              <border_color>
+                <color name="Header_Background" red="77" green="77" blue="77" />
+              </border_color>
+              <horizontal_alignment>1</horizontal_alignment>
+              <actions hook="false" hook_all="false" />
+              <y>0</y>
+              <wrap_words>false</wrap_words>
+              <tooltip>NOT available !&#xD;
+chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+              <x>0</x>
+            </widget>
             <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
               <border_alarm_sensitive>false</border_alarm_sensitive>
-              <visible>true</visible>
+              <visible>false</visible>
               <wuid>-49c63414:14be403d002:448e</wuid>
               <scripts />
               <height>22</height>
               <style>0</style>
-              <name>Check Box_5</name>
+              <name>Action 1_0</name>
               <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
               <scale_options>
                 <width_scalable>true</width_scalable>
@@ -415,7 +456,18 @@ $(pv_value)</tooltip>
               <border_style>0</border_style>
               <push_action_index>0</push_action_index>
               <image></image>
-              <rules />
+              <rules>
+                <rule name="Visible" prop_id="visible" out_exp="false">
+                  <exp bool_exp="pvSev0 &lt; 4">
+                    <value>true</value>
+                  </exp>
+                  <exp bool_exp="1">
+                    <value>false</value>
+                  </exp>
+                  <pv trig="true">$(PREFIX)$(NAME):$(ADDRESS):listId$(SUFFIX)</pv>
+                  <pv trig="true">sim://flipflop(30)</pv>
+                </rule>
+              </rules>
               <pv_value />
               <toggle_button>false</toggle_button>
               <border_width>0</border_width>
@@ -433,8 +485,7 @@ $(pv_value)</tooltip>
                   <description></description>
                 </action>
               </actions>
-              <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+              <tooltip>open chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
               <x>0</x>
             </widget>
           </widget>
@@ -479,14 +530,55 @@ $(pv_value)</tooltip>
             <actions hook="false" hook_all="false" />
             <x>0</x>
             <tooltip></tooltip>
+            <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+              <visible>true</visible>
+              <vertical_alignment>1</vertical_alignment>
+              <wuid>321d70aa:14bea6595d9:6431</wuid>
+              <auto_size>false</auto_size>
+              <scripts />
+              <height>22</height>
+              <name>Inactive Label</name>
+              <scale_options>
+                <width_scalable>true</width_scalable>
+                <height_scalable>false</height_scalable>
+                <keep_wh_ratio>false</keep_wh_ratio>
+              </scale_options>
+              <transparent>false</transparent>
+              <background_color>
+                <color red="240" green="240" blue="240" />
+              </background_color>
+              <foreground_color>
+                <color red="128" green="128" blue="128" />
+              </foreground_color>
+              <widget_type>Label</widget_type>
+              <enabled>false</enabled>
+              <text>sideSelect $(sideSelect)</text>
+              <font>
+                <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+              </font>
+              <width>70</width>
+              <border_style>3</border_style>
+              <rules />
+              <border_width>1</border_width>
+              <border_color>
+                <color name="Header_Background" red="77" green="77" blue="77" />
+              </border_color>
+              <horizontal_alignment>1</horizontal_alignment>
+              <actions hook="false" hook_all="false" />
+              <y>0</y>
+              <wrap_words>false</wrap_words>
+              <tooltip>NOT available !&#xD;
+chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+              <x>0</x>
+            </widget>
             <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
               <border_alarm_sensitive>false</border_alarm_sensitive>
-              <visible>true</visible>
+              <visible>false</visible>
               <wuid>-49c63414:14be403d002:4490</wuid>
               <scripts />
               <height>22</height>
               <style>0</style>
-              <name>Check Box_5</name>
+              <name>Action 1_1</name>
               <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
               <scale_options>
                 <width_scalable>true</width_scalable>
@@ -511,7 +603,18 @@ $(pv_value)</tooltip>
               <border_style>0</border_style>
               <push_action_index>0</push_action_index>
               <image></image>
-              <rules />
+              <rules>
+                <rule name="Visible" prop_id="visible" out_exp="false">
+                  <exp bool_exp="pvSev0 &lt; 4">
+                    <value>true</value>
+                  </exp>
+                  <exp bool_exp="1">
+                    <value>false</value>
+                  </exp>
+                  <pv trig="true">$(PREFIX)$(NAME):$(ADDRESS):listId$(SUFFIX)</pv>
+                  <pv trig="true">sim://flipflop(30)</pv>
+                </rule>
+              </rules>
               <pv_value />
               <toggle_button>false</toggle_button>
               <border_width>0</border_width>
@@ -529,8 +632,7 @@ $(pv_value)</tooltip>
                   <description></description>
                 </action>
               </actions>
-              <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+              <tooltip>open chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
               <x>0</x>
             </widget>
           </widget>
@@ -729,7 +831,7 @@ $(pv_value)</tooltip>
             <border_style>0</border_style>
             <rules />
             <fc>false</fc>
-            <lock_children>true</lock_children>
+            <lock_children>false</lock_children>
             <border_width>1</border_width>
             <border_color>
               <color red="0" green="128" blue="255" />
@@ -738,14 +840,55 @@ $(pv_value)</tooltip>
             <actions hook="false" hook_all="false" />
             <x>0</x>
             <tooltip></tooltip>
+            <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+              <visible>true</visible>
+              <vertical_alignment>1</vertical_alignment>
+              <wuid>321d70aa:14bea6595d9:642f</wuid>
+              <auto_size>false</auto_size>
+              <scripts />
+              <height>22</height>
+              <name>Inactive Label</name>
+              <scale_options>
+                <width_scalable>true</width_scalable>
+                <height_scalable>false</height_scalable>
+                <keep_wh_ratio>false</keep_wh_ratio>
+              </scale_options>
+              <transparent>false</transparent>
+              <background_color>
+                <color red="240" green="240" blue="240" />
+              </background_color>
+              <foreground_color>
+                <color red="128" green="128" blue="128" />
+              </foreground_color>
+              <widget_type>Label</widget_type>
+              <enabled>false</enabled>
+              <text>sideSelect $(sideSelect)</text>
+              <font>
+                <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+              </font>
+              <width>70</width>
+              <border_style>3</border_style>
+              <rules />
+              <border_width>1</border_width>
+              <border_color>
+                <color name="Header_Background" red="77" green="77" blue="77" />
+              </border_color>
+              <horizontal_alignment>1</horizontal_alignment>
+              <actions hook="false" hook_all="false" />
+              <y>0</y>
+              <wrap_words>false</wrap_words>
+              <tooltip>NOT available !&#xD;
+chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+              <x>0</x>
+            </widget>
             <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
               <border_alarm_sensitive>false</border_alarm_sensitive>
-              <visible>true</visible>
+              <visible>false</visible>
               <wuid>-534ef5a1:14be9f9418a:-60ff</wuid>
               <scripts />
               <height>22</height>
               <style>0</style>
-              <name>Check Box_5</name>
+              <name>Action 2_0</name>
               <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
               <scale_options>
                 <width_scalable>true</width_scalable>
@@ -770,7 +913,18 @@ $(pv_value)</tooltip>
               <border_style>0</border_style>
               <push_action_index>0</push_action_index>
               <image></image>
-              <rules />
+              <rules>
+                <rule name="Visible" prop_id="visible" out_exp="false">
+                  <exp bool_exp="pvSev0 &lt; 4">
+                    <value>true</value>
+                  </exp>
+                  <exp bool_exp="1">
+                    <value>false</value>
+                  </exp>
+                  <pv trig="true">$(PREFIX)$(NAME):$(ADDRESS):listId$(SUFFIX)</pv>
+                  <pv trig="true">sim://flipflop(30)</pv>
+                </rule>
+              </rules>
               <pv_value />
               <toggle_button>false</toggle_button>
               <border_width>0</border_width>
@@ -788,8 +942,7 @@ $(pv_value)</tooltip>
                   <description></description>
                 </action>
               </actions>
-              <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+              <tooltip>open chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
               <x>0</x>
             </widget>
           </widget>
@@ -834,14 +987,55 @@ $(pv_value)</tooltip>
             <actions hook="false" hook_all="false" />
             <x>0</x>
             <tooltip></tooltip>
+            <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+              <visible>true</visible>
+              <vertical_alignment>1</vertical_alignment>
+              <wuid>321d70aa:14bea6595d9:6430</wuid>
+              <auto_size>false</auto_size>
+              <scripts />
+              <height>22</height>
+              <name>Inactive Label</name>
+              <scale_options>
+                <width_scalable>true</width_scalable>
+                <height_scalable>false</height_scalable>
+                <keep_wh_ratio>false</keep_wh_ratio>
+              </scale_options>
+              <transparent>false</transparent>
+              <background_color>
+                <color red="240" green="240" blue="240" />
+              </background_color>
+              <foreground_color>
+                <color red="128" green="128" blue="128" />
+              </foreground_color>
+              <widget_type>Label</widget_type>
+              <enabled>false</enabled>
+              <text>sideSelect $(sideSelect)</text>
+              <font>
+                <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+              </font>
+              <width>70</width>
+              <border_style>3</border_style>
+              <rules />
+              <border_width>1</border_width>
+              <border_color>
+                <color name="Header_Background" red="77" green="77" blue="77" />
+              </border_color>
+              <horizontal_alignment>1</horizontal_alignment>
+              <actions hook="false" hook_all="false" />
+              <y>0</y>
+              <wrap_words>false</wrap_words>
+              <tooltip>NOT available !&#xD;
+chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+              <x>0</x>
+            </widget>
             <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
               <border_alarm_sensitive>false</border_alarm_sensitive>
-              <visible>true</visible>
+              <visible>false</visible>
               <wuid>-534ef5a1:14be9f9418a:-60fd</wuid>
               <scripts />
               <height>22</height>
               <style>0</style>
-              <name>Check Box_5</name>
+              <name>Action 2_1</name>
               <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
               <scale_options>
                 <width_scalable>true</width_scalable>
@@ -866,7 +1060,18 @@ $(pv_value)</tooltip>
               <border_style>0</border_style>
               <push_action_index>0</push_action_index>
               <image></image>
-              <rules />
+              <rules>
+                <rule name="Visible" prop_id="visible" out_exp="false">
+                  <exp bool_exp="pvSev0 &lt; 4">
+                    <value>true</value>
+                  </exp>
+                  <exp bool_exp="1">
+                    <value>false</value>
+                  </exp>
+                  <pv trig="true">$(PREFIX)$(NAME):$(ADDRESS):listId$(SUFFIX)</pv>
+                  <pv trig="true">sim://flipflop(30)</pv>
+                </rule>
+              </rules>
               <pv_value />
               <toggle_button>false</toggle_button>
               <border_width>0</border_width>
@@ -884,8 +1089,7 @@ $(pv_value)</tooltip>
                   <description></description>
                 </action>
               </actions>
-              <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+              <tooltip>open chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
               <x>0</x>
             </widget>
           </widget>
@@ -915,14 +1119,6 @@ $(pv_value)</tooltip>
         <widget_type>Grid Layout</widget_type>
         <grid_gap>0</grid_gap>
       </widget>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
-      <wuid>-49c63414:14be403d002:44f8</wuid>
-      <number_of_columns>3</number_of_columns>
-      <name>Grid Layout</name>
-      <fill_grids>true</fill_grids>
-      <widget_type>Grid Layout</widget_type>
-      <grid_gap>15</grid_gap>
     </widget>
   </widget>
   <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">

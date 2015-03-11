@@ -76,7 +76,6 @@
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <pv>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):set$(SUFFIX)</pv>
     </macros>
     <visible>true</visible>
     <wuid>-44e60fd:14b2c12d03f:-7633</wuid>
@@ -118,7 +117,6 @@
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <pv>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):set:hex$(SUFFIX)</pv>
     </macros>
     <visible>true</visible>
     <wuid>5b86be96:14b783209eb:-7e3c</wuid>
@@ -363,7 +361,7 @@
           <exp bool_exp="pv0 == 1">
             <value>"HexSet"</value>
           </exp>
-          <pv trig="true">loc://Hex_Deci_$(LCID)$(dac)</pv>
+          <pv trig="true">loc://Hex_Deci_$(LCID)_$(dac)$(chipId)$(ADDRESS)</pv>
         </rule>
       </rules>
       <border_width>1</border_width>
@@ -389,7 +387,7 @@
         <height_scalable>false</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>loc://Hex_Deci_$(LCID)$(dac)</pv_name>
+      <pv_name>loc://Hex_Deci_$(LCID)_$(dac)$(chipId)$(ADDRESS)</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
