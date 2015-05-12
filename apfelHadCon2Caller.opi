@@ -302,9 +302,50 @@ display.performAutosize();
       <grid_gap>2</grid_gap>
     </widget>
   </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <visible>true</visible>
+    <wuid>-2128e279:14d4318ca4d:-41e4</wuid>
+    <auto_size>true</auto_size>
+    <scripts />
+    <zoom_to_fit>false</zoom_to_fit>
+    <height>83</height>
+    <name>Linking Container</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <opi_file>trigger.opi</opi_file>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <group_name></group_name>
+    <enabled>true</enabled>
+    <widget_type>Linking Container</widget_type>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <width>285</width>
+    <border_style>3</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>390</y>
+    <actions hook="false" hook_all="false" />
+    <x>198</x>
+    <tooltip></tooltip>
+  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
     <wuid>-49c63414:14be403d002:6af8</wuid>
-    <number_of_columns>3</number_of_columns>
+    <number_of_columns>2</number_of_columns>
     <name>Grid Layout</name>
     <fill_grids>false</fill_grids>
     <widget_type>Grid Layout</widget_type>
