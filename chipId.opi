@@ -221,7 +221,7 @@
           <font>
             <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
           </font>
-          <width>495</width>
+          <width>515</width>
           <border_style>0</border_style>
           <rules />
           <fc>false</fc>
@@ -262,13 +262,13 @@
               <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
             </font>
             <width>113</width>
-            <border_style>0</border_style>
+            <border_style>14</border_style>
             <rules />
             <fc>false</fc>
             <lock_children>false</lock_children>
             <border_width>1</border_width>
             <border_color>
-              <color red="0" green="128" blue="255" />
+              <color name="Header_Background" red="77" green="77" blue="77" />
             </border_color>
             <y>0</y>
             <actions hook="true" hook_all="false">
@@ -311,7 +311,7 @@
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
               <width>112</width>
-              <border_style>14</border_style>
+              <border_style>0</border_style>
               <rules />
               <fc>false</fc>
               <lock_children>false</lock_children>
@@ -401,7 +401,7 @@
                 <y>0</y>
                 <wrap_words>false</wrap_words>
                 <tooltip></tooltip>
-                <x>57</x>
+                <x>56</x>
               </widget>
               <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
                 <wuid>5b86be96:14b783209eb:-d23</wuid>
@@ -409,7 +409,7 @@
                 <name>Grid Layout</name>
                 <fill_grids>false</fill_grids>
                 <widget_type>Grid Layout</widget_type>
-                <grid_gap>2</grid_gap>
+                <grid_gap>0</grid_gap>
               </widget>
             </widget>
             <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -425,7 +425,7 @@
               <data_type>0</data_type>
               <name>LED</name>
               <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-              <show_boolean_label>false</show_boolean_label>
+              <show_boolean_label>true</show_boolean_label>
               <scale_options>
                 <width_scalable>true</width_scalable>
                 <height_scalable>true</height_scalable>
@@ -439,28 +439,28 @@
                 <color red="240" green="240" blue="240" />
               </background_color>
               <foreground_color>
-                <color red="192" green="192" blue="192" />
+                <color name="Header_Background" red="77" green="77" blue="77" />
               </foreground_color>
-              <off_label>OFF</off_label>
+              <off_label>not available</off_label>
               <widget_type>LED</widget_type>
               <enabled>true</enabled>
               <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
               <font>
-                <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+                <opifont.name fontName="Segoe UI" height="9" style="1">Default Bold</opifont.name>
               </font>
-              <width>112</width>
+              <width>110</width>
               <border_style>0</border_style>
               <effect_3d>true</effect_3d>
               <rules />
               <pv_value />
               <bit>-1</bit>
               <border_width>1</border_width>
-              <on_label>ON</on_label>
+              <on_label>active</on_label>
               <border_color>
                 <color red="0" green="128" blue="255" />
               </border_color>
               <actions hook="false" hook_all="false" />
-              <y>30</y>
+              <y>28</y>
               <tooltip>$(pv_name)
 $(pv_value)</tooltip>
               <x>0</x>
@@ -471,7 +471,7 @@ $(pv_value)</tooltip>
               <name>Grid Layout</name>
               <fill_grids>true</fill_grids>
               <widget_type>Grid Layout</widget_type>
-              <grid_gap>2</grid_gap>
+              <grid_gap>0</grid_gap>
             </widget>
           </widget>
           <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -501,7 +501,7 @@ $(pv_value)</tooltip>
             <font>
               <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
             </font>
-            <width>380</width>
+            <width>400</width>
             <border_style>14</border_style>
             <rules />
             <fc>false</fc>
@@ -514,6 +514,63 @@ $(pv_value)</tooltip>
             <actions hook="false" hook_all="false" />
             <x>114</x>
             <tooltip></tooltip>
+            <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
+              <border_alarm_sensitive>false</border_alarm_sensitive>
+              <visible>true</visible>
+              <fill_level>0.0</fill_level>
+              <line_color>
+                <color red="128" green="0" blue="255" />
+              </line_color>
+              <wuid>-2128e279:14d4318ca4d:-531a</wuid>
+              <bg_gradient_color>
+                <color red="255" green="255" blue="255" />
+              </bg_gradient_color>
+              <scripts />
+              <height>50</height>
+              <anti_alias>true</anti_alias>
+              <name>Rectangle</name>
+              <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+              <alpha>255</alpha>
+              <scale_options>
+                <width_scalable>true</width_scalable>
+                <height_scalable>true</height_scalable>
+                <keep_wh_ratio>false</keep_wh_ratio>
+              </scale_options>
+              <transparent>true</transparent>
+              <pv_name></pv_name>
+              <background_color>
+                <color red="30" green="144" blue="255" />
+              </background_color>
+              <foreground_color>
+                <color red="255" green="0" blue="0" />
+              </foreground_color>
+              <widget_type>Rectangle</widget_type>
+              <enabled>true</enabled>
+              <fg_gradient_color>
+                <color red="255" green="255" blue="255" />
+              </fg_gradient_color>
+              <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+              <font>
+                <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+              </font>
+              <width>2</width>
+              <line_style>0</line_style>
+              <border_style>0</border_style>
+              <rules />
+              <pv_value />
+              <border_width>1</border_width>
+              <line_width>0</line_width>
+              <horizontal_fill>true</horizontal_fill>
+              <border_color>
+                <color red="0" green="128" blue="255" />
+              </border_color>
+              <actions hook="false" hook_all="false" />
+              <y>0</y>
+              <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+              <x>0</x>
+              <gradient>false</gradient>
+            </widget>
             <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
               <macros>
                 <include_parent_macros>true</include_parent_macros>
@@ -552,7 +609,7 @@ $(pv_value)</tooltip>
               </border_color>
               <y>0</y>
               <actions hook="false" hook_all="false" />
-              <x>0</x>
+              <x>8</x>
               <tooltip></tooltip>
               <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
                 <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -725,7 +782,7 @@ $(pv_value)</tooltip>
               <y>0</y>
               <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-              <x>98</x>
+              <x>110</x>
               <gradient>false</gradient>
             </widget>
             <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -766,7 +823,7 @@ $(pv_value)</tooltip>
               </border_color>
               <y>0</y>
               <actions hook="false" hook_all="false" />
-              <x>102</x>
+              <x>118</x>
               <tooltip></tooltip>
               <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
                 <macros>
@@ -958,7 +1015,7 @@ $(pv_value)</tooltip>
               <y>0</y>
               <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-              <x>208</x>
+              <x>228</x>
               <gradient>false</gradient>
             </widget>
             <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -1000,7 +1057,7 @@ $(pv_value)</tooltip>
               </border_color>
               <y>0</y>
               <actions hook="false" hook_all="false" />
-              <x>212</x>
+              <x>236</x>
               <tooltip></tooltip>
               <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
                 <macros>
@@ -1101,7 +1158,7 @@ $(pv_value)</tooltip>
               <name>Grid Layout</name>
               <fill_grids>false</fill_grids>
               <widget_type>Grid Layout</widget_type>
-              <grid_gap>2</grid_gap>
+              <grid_gap>6</grid_gap>
             </widget>
           </widget>
           <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
@@ -1254,7 +1311,7 @@ $(pv_value)</tooltip>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>380</width>
+      <width>400</width>
       <line_style>0</line_style>
       <border_style>0</border_style>
       <rules>
