@@ -210,48 +210,6 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <x>0</x>
     <tooltip></tooltip>
-    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-      <macros>
-        <include_parent_macros>true</include_parent_macros>
-        <pv>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):ch$(channel):tp:seq:height$(SUFFIX)</pv>
-      </macros>
-      <visible>true</visible>
-      <wuid>5b86be96:14b783209eb:-17cf</wuid>
-      <auto_size>true</auto_size>
-      <scripts />
-      <zoom_to_fit>false</zoom_to_fit>
-      <height>161</height>
-      <name>Pulse Height</name>
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <opi_file>valueSet.opi</opi_file>
-      <foreground_color>
-        <color red="192" green="192" blue="192" />
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240" />
-      </background_color>
-      <group_name>Enum w/o alarm</group_name>
-      <enabled>true</enabled>
-      <widget_type>Linking Container</widget_type>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-      </font>
-      <width>69</width>
-      <border_style>0</border_style>
-      <rules />
-      <border_width>1</border_width>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <y>0</y>
-      <actions hook="false" hook_all="false" />
-      <x>0</x>
-      <tooltip></tooltip>
-    </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <visible>true</visible>
@@ -304,6 +262,48 @@ $(pv_value)</tooltip>
       <tooltip>$(pv_name)
 $(pv_value)</tooltip>
       <x>57</x>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <pv>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):ch$(channel):tp:seq:height$(SUFFIX)</pv>
+      </macros>
+      <visible>true</visible>
+      <wuid>5b86be96:14b783209eb:-17cf</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <zoom_to_fit>false</zoom_to_fit>
+      <height>25</height>
+      <name>Pulse Height</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>valueSet.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>Enum w/o alarm</group_name>
+      <enabled>true</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      </font>
+      <width>57</width>
+      <border_style>0</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>0</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
       <border_alarm_sensitive>false</border_alarm_sensitive>

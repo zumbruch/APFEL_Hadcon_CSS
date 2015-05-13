@@ -192,7 +192,7 @@
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>20</width>
+      <width>16</width>
       <line_style>0</line_style>
       <border_style>0</border_style>
       <rules>
@@ -465,11 +465,13 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <dacGet>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac)$(SUFFIX)</dacGet>
+      <pnaid>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac)</pnaid>
+      <dacGet>$(pnaid)$(SUFFIX)</dacGet>
       <dacSet>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):set$(SUFFIX)</dacSet>
       <dacGetHex>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):hex$(SUFFIX)</dacGetHex>
       <dacReadStatus>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):read:status$(SUFFIX)</dacReadStatus>
       <dacSetHex>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):set:hex$(SUFFIX)</dacSetHex>
+      <dacCopy>$(pnaid):copy$(SUFFIX)</dacCopy>
     </macros>
     <visible>true</visible>
     <wuid>-44e60fd:14b2c12d03f:-7d80</wuid>
@@ -616,7 +618,7 @@ $(pv_value)</tooltip>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>20</width>
+      <width>15</width>
       <border_style>0</border_style>
       <rules />
       <fc>false</fc>
@@ -641,7 +643,7 @@ $(pv_value)</tooltip>
           <color red="255" green="255" blue="255" />
         </bg_gradient_color>
         <scripts />
-        <height>16</height>
+        <height>15</height>
         <anti_alias>true</anti_alias>
         <name>LED</name>
         <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
@@ -668,7 +670,7 @@ $(pv_value)</tooltip>
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
         </font>
-        <width>16</width>
+        <width>15</width>
         <line_style>0</line_style>
         <border_style>0</border_style>
         <rules>
@@ -719,7 +721,7 @@ $(pv_value)</tooltip>
         <y>4</y>
         <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-        <x>2</x>
+        <x>0</x>
         <gradient>false</gradient>
       </widget>
     </widget>
@@ -750,7 +752,7 @@ $(pv_value)</tooltip>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>199</width>
+      <width>187</width>
       <border_style>0</border_style>
       <rules />
       <fc>false</fc>
@@ -761,7 +763,7 @@ $(pv_value)</tooltip>
       </border_color>
       <y>0</y>
       <actions hook="false" hook_all="false" />
-      <x>38</x>
+      <x>33</x>
       <tooltip></tooltip>
       <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
         <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -799,7 +801,7 @@ $(pv_value)</tooltip>
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
         </font>
-        <width>96</width>
+        <width>84</width>
         <border_style>0</border_style>
         <effect_3d>false</effect_3d>
         <label />
@@ -816,107 +818,156 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
         <x>0</x>
       </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
-        <border_alarm_sensitive>true</border_alarm_sensitive>
+      <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+        </macros>
         <visible>true</visible>
-        <vertical_alignment>1</vertical_alignment>
-        <show_units>false</show_units>
-        <wuid>-44e60fd:14b2c12d03f:-7d8f</wuid>
-        <auto_size>false</auto_size>
-        <rotation_angle>0.0</rotation_angle>
+        <wuid>7f81345a:14cd6aa8330:-7cc</wuid>
         <scripts />
         <height>24</height>
-        <name>Hex</name>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <name>Grouping Container</name>
         <scale_options>
           <width_scalable>true</width_scalable>
           <height_scalable>true</height_scalable>
           <keep_wh_ratio>false</keep_wh_ratio>
         </scale_options>
-        <format_type>3</format_type>
-        <precision_from_pv>false</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(dacGetHex)</pv_name>
-        <background_color>
-          <color name="Read_Background" red="240" green="240" blue="240" />
-        </background_color>
+        <show_scrollbar>false</show_scrollbar>
         <foreground_color>
-          <color red="0" green="0" blue="0" />
+          <color red="192" green="192" blue="192" />
         </foreground_color>
-        <widget_type>Text Update</widget_type>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
         <enabled>true</enabled>
-        <text>####</text>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <precision>0</precision>
+        <widget_type>Grouping Container</widget_type>
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
         </font>
-        <width>40</width>
-        <border_style>0</border_style>
+        <width>101</width>
+        <border_style>1</border_style>
         <rules />
-        <pv_value />
+        <fc>false</fc>
+        <lock_children>false</lock_children>
         <border_width>1</border_width>
         <border_color>
-          <color red="0" green="128" blue="255" />
+          <color red="128" green="128" blue="128" />
         </border_color>
-        <horizontal_alignment>2</horizontal_alignment>
-        <actions hook="false" hook_all="false" />
         <y>0</y>
-        <wrap_words>false</wrap_words>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <x>97</x>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
-        <border_alarm_sensitive>true</border_alarm_sensitive>
-        <visible>true</visible>
-        <vertical_alignment>1</vertical_alignment>
-        <show_units>true</show_units>
-        <wuid>-44e60fd:14b2c12d03f:-60be</wuid>
-        <auto_size>false</auto_size>
-        <rotation_angle>0.0</rotation_angle>
-        <scripts />
-        <height>24</height>
-        <name>mV</name>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <format_type>0</format_type>
-        <precision_from_pv>false</precision_from_pv>
-        <transparent>false</transparent>
-        <pv_name>$(dacGet)</pv_name>
-        <background_color>
-          <color name="Read_Background" red="240" green="240" blue="240" />
-        </background_color>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <widget_type>Text Update</widget_type>
-        <enabled>true</enabled>
-        <text>#### mV</text>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <precision>0</precision>
-        <font>
-          <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-        </font>
-        <width>60</width>
-        <border_style>0</border_style>
-        <rules />
-        <pv_value />
-        <border_width>1</border_width>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <horizontal_alignment>2</horizontal_alignment>
         <actions hook="false" hook_all="false" />
-        <y>0</y>
-        <wrap_words>false</wrap_words>
-        <tooltip>$(pv_name)
+        <x>85</x>
+        <tooltip></tooltip>
+        <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+          <border_alarm_sensitive>true</border_alarm_sensitive>
+          <visible>true</visible>
+          <vertical_alignment>1</vertical_alignment>
+          <show_units>false</show_units>
+          <wuid>-44e60fd:14b2c12d03f:-7d8f</wuid>
+          <auto_size>false</auto_size>
+          <rotation_angle>0.0</rotation_angle>
+          <scripts />
+          <height>24</height>
+          <name>Hex</name>
+          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+          <scale_options>
+            <width_scalable>true</width_scalable>
+            <height_scalable>true</height_scalable>
+            <keep_wh_ratio>false</keep_wh_ratio>
+          </scale_options>
+          <format_type>3</format_type>
+          <precision_from_pv>false</precision_from_pv>
+          <transparent>false</transparent>
+          <pv_name>$(dacGetHex)</pv_name>
+          <background_color>
+            <color name="Read_Background" red="240" green="240" blue="240" />
+          </background_color>
+          <foreground_color>
+            <color red="0" green="0" blue="0" />
+          </foreground_color>
+          <widget_type>Text Update</widget_type>
+          <enabled>true</enabled>
+          <text>####</text>
+          <backcolor_alarm_sensitive>true</backcolor_alarm_sensitive>
+          <precision>0</precision>
+          <font>
+            <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+          </font>
+          <width>40</width>
+          <border_style>0</border_style>
+          <rules />
+          <pv_value />
+          <border_width>1</border_width>
+          <border_color>
+            <color red="0" green="128" blue="255" />
+          </border_color>
+          <horizontal_alignment>2</horizontal_alignment>
+          <actions hook="false" hook_all="false" />
+          <y>0</y>
+          <wrap_words>false</wrap_words>
+          <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-        <x>138</x>
+          <x>0</x>
+        </widget>
+        <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+          <border_alarm_sensitive>true</border_alarm_sensitive>
+          <visible>true</visible>
+          <vertical_alignment>1</vertical_alignment>
+          <show_units>true</show_units>
+          <wuid>-44e60fd:14b2c12d03f:-60be</wuid>
+          <auto_size>false</auto_size>
+          <rotation_angle>0.0</rotation_angle>
+          <scripts />
+          <height>24</height>
+          <name>mV</name>
+          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+          <scale_options>
+            <width_scalable>true</width_scalable>
+            <height_scalable>true</height_scalable>
+            <keep_wh_ratio>false</keep_wh_ratio>
+          </scale_options>
+          <format_type>0</format_type>
+          <precision_from_pv>false</precision_from_pv>
+          <transparent>false</transparent>
+          <pv_name>$(dacGet)</pv_name>
+          <background_color>
+            <color name="Read_Background" red="240" green="240" blue="240" />
+          </background_color>
+          <foreground_color>
+            <color red="0" green="0" blue="0" />
+          </foreground_color>
+          <widget_type>Text Update</widget_type>
+          <enabled>true</enabled>
+          <text>#### mV</text>
+          <backcolor_alarm_sensitive>true</backcolor_alarm_sensitive>
+          <precision>0</precision>
+          <font>
+            <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+          </font>
+          <width>60</width>
+          <border_style>0</border_style>
+          <rules />
+          <pv_value />
+          <border_width>1</border_width>
+          <border_color>
+            <color red="0" green="128" blue="255" />
+          </border_color>
+          <horizontal_alignment>2</horizontal_alignment>
+          <actions hook="false" hook_all="false" />
+          <y>0</y>
+          <wrap_words>false</wrap_words>
+          <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+          <x>41</x>
+        </widget>
+        <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
+          <wuid>7f81345a:14cd6aa8330:-76c</wuid>
+          <number_of_columns>10</number_of_columns>
+          <name>Grid Layout</name>
+          <fill_grids>false</fill_grids>
+          <widget_type>Grid Layout</widget_type>
+          <grid_gap>1</grid_gap>
+        </widget>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
         <wuid>-44e60fd:14b2c12d03f:-771c</wuid>
@@ -926,6 +977,73 @@ $(pv_value)</tooltip>
         <widget_type>Grid Layout</widget_type>
         <grid_gap>1</grid_gap>
       </widget>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <visible>true</visible>
+      <fill_level>0.0</fill_level>
+      <line_color>
+        <color red="128" green="0" blue="255" />
+      </line_color>
+      <wuid>7f81345a:14d2dcf5ac4:-106</wuid>
+      <rotation_angle>0.0</rotation_angle>
+      <scripts />
+      <height>24</height>
+      <anti_alias>true</anti_alias>
+      <name>Polygon</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <alpha>255</alpha>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <points>
+        <point x="221" y="6" />
+        <point x="231" y="6" />
+        <point x="231" y="0" />
+        <point x="236" y="12" />
+        <point x="231" y="23" />
+        <point x="231" y="17" />
+        <point x="221" y="17" />
+      </points>
+      <transparent>false</transparent>
+      <pv_name>$(dacCopy)</pv_name>
+      <background_color>
+        <color red="30" green="144" blue="255" />
+      </background_color>
+      <foreground_color>
+        <color red="255" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Polygon</widget_type>
+      <enabled>true</enabled>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      </font>
+      <width>16</width>
+      <line_style>0</line_style>
+      <border_style>0</border_style>
+      <rules />
+      <pv_value />
+      <border_width>1</border_width>
+      <line_width>0</line_width>
+      <horizontal_fill>true</horizontal_fill>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <actions hook="true" hook_all="false">
+        <action type="WRITE_PV">
+          <pv_name>$(pv_name).PROC</pv_name>
+          <value>1</value>
+          <timeout>10</timeout>
+          <confirm_message></confirm_message>
+          <description>copy</description>
+        </action>
+      </actions>
+      <y>0</y>
+      <tooltip>copy</tooltip>
+      <x>221</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
       <macros>
