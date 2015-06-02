@@ -113,44 +113,44 @@
       </border_color>
       <y>0</y>
       <actions hook="false" hook_all="true">
-        <action type="OPEN_OPI_IN_VIEW">
+        <action type="OPEN_DISPLAY">
           <path>apfel.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <sideSelect>0</sideSelect>
             <pinSet>1</pinSet>
           </macros>
-          <Position>4</Position>
+          <replace>2</replace>
           <description></description>
         </action>
-        <action type="OPEN_OPI_IN_VIEW">
+        <action type="OPEN_DISPLAY">
           <path>apfel.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <sideSelect>1</sideSelect>
             <pinSet>1</pinSet>
           </macros>
-          <Position>4</Position>
+          <replace>2</replace>
           <description></description>
         </action>
-        <action type="OPEN_OPI_IN_VIEW">
+        <action type="OPEN_DISPLAY">
           <path>apfel.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <sideSelect>0</sideSelect>
             <pinSet>2</pinSet>
           </macros>
-          <Position>4</Position>
+          <replace>2</replace>
           <description></description>
         </action>
-        <action type="OPEN_OPI_IN_VIEW">
+        <action type="OPEN_DISPLAY">
           <path>apfel.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <sideSelect>1</sideSelect>
             <pinSet>2</pinSet>
           </macros>
-          <Position>4</Position>
+          <replace>2</replace>
           <description></description>
         </action>
       </actions>
@@ -279,22 +279,22 @@
           </border_color>
           <y>0</y>
           <actions hook="false" hook_all="true">
-            <action type="OPEN_OPI_IN_VIEW">
+            <action type="OPEN_DISPLAY">
               <path>apfel.opi</path>
               <macros>
                 <include_parent_macros>true</include_parent_macros>
                 <sideSelect>0</sideSelect>
               </macros>
-              <Position>4</Position>
+              <replace>2</replace>
               <description></description>
             </action>
-            <action type="OPEN_OPI_IN_VIEW">
+            <action type="OPEN_DISPLAY">
               <path>apfel.opi</path>
               <macros>
                 <include_parent_macros>true</include_parent_macros>
                 <sideSelect>1</sideSelect>
               </macros>
-              <Position>4</Position>
+              <replace>2</replace>
               <description></description>
             </action>
           </actions>
@@ -476,12 +476,12 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               </border_color>
               <y>0</y>
               <actions hook="false" hook_all="false">
-                <action type="OPEN_OPI_IN_VIEW">
+                <action type="OPEN_DISPLAY">
                   <path>apfel.opi</path>
                   <macros>
                     <include_parent_macros>true</include_parent_macros>
                   </macros>
-                  <Position>4</Position>
+                  <replace>2</replace>
                   <description></description>
                 </action>
               </actions>
@@ -623,12 +623,12 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               </border_color>
               <y>0</y>
               <actions hook="false" hook_all="false">
-                <action type="OPEN_OPI_IN_VIEW">
+                <action type="OPEN_DISPLAY">
                   <path>apfel.opi</path>
                   <macros>
                     <include_parent_macros>true</include_parent_macros>
                   </macros>
-                  <Position>4</Position>
+                  <replace>2</replace>
                   <description></description>
                 </action>
               </actions>
@@ -736,22 +736,22 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
           </border_color>
           <y>0</y>
           <actions hook="false" hook_all="true">
-            <action type="OPEN_OPI_IN_VIEW">
+            <action type="OPEN_DISPLAY">
               <path>apfel.opi</path>
               <macros>
                 <include_parent_macros>true</include_parent_macros>
                 <sideSelect>0</sideSelect>
               </macros>
-              <Position>4</Position>
+              <replace>2</replace>
               <description></description>
             </action>
-            <action type="OPEN_OPI_IN_VIEW">
+            <action type="OPEN_DISPLAY">
               <path>apfel.opi</path>
               <macros>
                 <include_parent_macros>true</include_parent_macros>
                 <sideSelect>1</sideSelect>
               </macros>
-              <Position>4</Position>
+              <replace>2</replace>
               <description></description>
             </action>
           </actions>
@@ -933,12 +933,12 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               </border_color>
               <y>0</y>
               <actions hook="false" hook_all="false">
-                <action type="OPEN_OPI_IN_VIEW">
+                <action type="OPEN_DISPLAY">
                   <path>apfel.opi</path>
                   <macros>
                     <include_parent_macros>true</include_parent_macros>
                   </macros>
-                  <Position>4</Position>
+                  <replace>2</replace>
                   <description></description>
                 </action>
               </actions>
@@ -1080,12 +1080,12 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               </border_color>
               <y>0</y>
               <actions hook="false" hook_all="false">
-                <action type="OPEN_OPI_IN_VIEW">
+                <action type="OPEN_DISPLAY">
                   <path>apfel.opi</path>
                   <macros>
                     <include_parent_macros>true</include_parent_macros>
                   </macros>
-                  <Position>4</Position>
+                  <replace>2</replace>
                   <description></description>
                 </action>
               </actions>
