@@ -4,8 +4,8 @@
   <macros>
     <include_parent_macros>true</include_parent_macros>
     <HADCON>$(hadcon)</HADCON>
-    <PREFIX>PANDA:</PREFIX>
-    <NAME>APFEL:$(HADCON)</NAME>
+    <PREFIX>APFEL:$(HADCON)</PREFIX>
+    <NAME></NAME>
     <SUFFIX></SUFFIX>
     <ADDRESS>$(portName):ps$(pinSet):s$(sideSelect)</ADDRESS>
   </macros>
@@ -181,7 +181,7 @@ $(pv_value)</tooltip>
         <height_scalable>false</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>loc://hadCon_$(DID)("ee-raspi0201:1:")</pv_name>
+      <pv_name>loc://hadCon_$(DID)("ee-raspi0201:1")</pv_name>
       <background_color>
         <color name="WritePV_Background" red="128" green="255" blue="255" />
       </background_color>
@@ -199,12 +199,12 @@ $(pv_value)</tooltip>
       <rules />
       <pv_value />
       <items>
-        <s>ee-raspi0201:1:</s>
-        <s>ee-raspi0201:2:</s>
-        <s>ee-raspi0202:1:</s>
-        <s>ee-raspi0202:2:</s>
-        <s>ee-raspi0203:1:</s>
-        <s>ee-raspi0203:2:</s>
+        <s>ee-raspi0201:1</s>
+        <s>ee-raspi0201:2</s>
+        <s>ee-raspi0202:1</s>
+        <s>ee-raspi0202:2</s>
+        <s>ee-raspi0203:1</s>
+        <s>ee-raspi0203:2</s>
       </items>
       <border_width>1</border_width>
       <border_color>
@@ -316,7 +316,7 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>515</width>
+    <width>457</width>
     <border_style>14</border_style>
     <rules />
     <fc>false</fc>
@@ -338,7 +338,7 @@ $(pv_value)</tooltip>
       <auto_size>false</auto_size>
       <scripts />
       <zoom_to_fit>true</zoom_to_fit>
-      <height>350</height>
+      <height>313</height>
       <name>Linking Container</name>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -358,7 +358,7 @@ $(pv_value)</tooltip>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>516</width>
+      <width>385</width>
       <border_style>3</border_style>
       <rules />
       <border_width>1</border_width>
