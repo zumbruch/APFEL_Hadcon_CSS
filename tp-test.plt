@@ -12,7 +12,7 @@
             <green>0</green>
             <red>0</red>
         </foregroundColor>
-        <formatPattern>ss.SSS</formatPattern>
+        <formatPattern>HH:mm:ss</formatPattern>
         <logScale>false</logScale>
         <majorGridColor>
             <blue>200</blue>
@@ -21,8 +21,8 @@
         </majorGridColor>
         <onPrimarySide>true</onPrimarySide>
         <range>
-            <lower>1.434361807483E12</lower>
-            <upper>1.434361809059E12</upper>
+            <lower>1.434461778889E12</lower>
+            <upper>1.434461925333E12</upper>
         </range>
         <scaleFont>1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI</scaleFont>
         <showMajorGrid>false</showMajorGrid>
@@ -49,8 +49,8 @@
         </majorGridColor>
         <onPrimarySide>true</onPrimarySide>
         <range>
-            <lower>-0.44429347826087007</lower>
-            <upper>2.8057065217391304</upper>
+            <lower>-0.35292801641348026</lower>
+            <upper>2.89707198358652</upper>
         </range>
         <scaleFont>1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI</scaleFont>
         <showMajorGrid>false</showMajorGrid>
@@ -68,7 +68,7 @@
             <green>0</green>
             <red>0</red>
         </foregroundColor>
-        <formatPattern>############.##</formatPattern>
+        <formatPattern>0.####E0</formatPattern>
         <logScale>true</logScale>
         <majorGridColor>
             <blue>200</blue>
@@ -77,8 +77,8 @@
         </majorGridColor>
         <onPrimarySide>true</onPrimarySide>
         <range>
-            <lower>0.005011321539218657</lower>
-            <upper>12.528303848046633</upper>
+            <lower>5.082649590295236E-22</lower>
+            <upper>0.3073138987372435</upper>
         </range>
         <scaleFont>1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI</scaleFont>
         <showMajorGrid>false</showMajorGrid>
@@ -105,40 +105,12 @@
         </majorGridColor>
         <onPrimarySide>true</onPrimarySide>
         <range>
-            <lower>-1.0263173440453683</lower>
-            <upper>4.413900047258979</upper>
+            <lower>-0.25070402118872415</lower>
+            <upper>5.189513370115623</upper>
         </range>
         <scaleFont>1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI</scaleFont>
         <showMajorGrid>false</showMajorGrid>
         <title>SEVR</title>
-        <titleFont>1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|1|0|0|0|0|Segoe UI</titleFont>
-    </axisSettingsList>
-    <axisSettingsList>
-        <autoFormat>true</autoFormat>
-        <autoScale>false</autoScale>
-        <autoScaleThreshold>0.01</autoScaleThreshold>
-        <dashGridLine>true</dashGridLine>
-        <dateEnabled>false</dateEnabled>
-        <foregroundColor>
-            <blue>0</blue>
-            <green>170</green>
-            <red>255</red>
-        </foregroundColor>
-        <formatPattern>############.##</formatPattern>
-        <logScale>true</logScale>
-        <majorGridColor>
-            <blue>200</blue>
-            <green>200</green>
-            <red>200</red>
-        </majorGridColor>
-        <onPrimarySide>true</onPrimarySide>
-        <range>
-            <lower>5.262569084140361E-4</lower>
-            <upper>1.3156422710350886</upper>
-        </range>
-        <scaleFont>1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI</scaleFont>
-        <showMajorGrid>false</showMajorGrid>
-        <title>DLY read [s]</title>
         <titleFont>1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|1|0|0|0|0|Segoe UI</titleFont>
     </axisSettingsList>
     <axisSettingsList>
@@ -161,12 +133,40 @@
         </majorGridColor>
         <onPrimarySide>true</onPrimarySide>
         <range>
-            <lower>-1.6942934782608694</lower>
-            <upper>1.5557065217391308</upper>
+            <lower>-1.6029280164134798</lower>
+            <upper>1.6470719835865202</upper>
         </range>
         <scaleFont>1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI</scaleFont>
         <showMajorGrid>false</showMajorGrid>
         <title>high / low (2)</title>
+        <titleFont>1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|1|0|0|0|0|Segoe UI</titleFont>
+    </axisSettingsList>
+    <axisSettingsList>
+        <autoFormat>true</autoFormat>
+        <autoScale>false</autoScale>
+        <autoScaleThreshold>0.01</autoScaleThreshold>
+        <dashGridLine>true</dashGridLine>
+        <dateEnabled>false</dateEnabled>
+        <foregroundColor>
+            <blue>255</blue>
+            <green>0</green>
+            <red>128</red>
+        </foregroundColor>
+        <formatPattern>############.##</formatPattern>
+        <logScale>false</logScale>
+        <majorGridColor>
+            <blue>200</blue>
+            <green>200</green>
+            <red>200</red>
+        </majorGridColor>
+        <onPrimarySide>true</onPrimarySide>
+        <range>
+            <lower>0.0</lower>
+            <upper>10.0</upper>
+        </range>
+        <scaleFont>1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI</scaleFont>
+        <showMajorGrid>false</showMajorGrid>
+        <title>APFEL:ee-raspi0201:1:A:ps1:s1:id4:ch2:tp:seq:started</title>
         <titleFont>1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|1|0|0|0|0|Segoe UI</titleFont>
     </axisSettingsList>
     <plotAreaBackColor>
@@ -262,33 +262,6 @@
         <traceType>STEP_HORIZONTALLY</traceType>
         <xAxis>0</xAxis>
         <xErrorBarType>BOTH</xErrorBarType>
-        <yAxis>4</yAxis>
-        <yErrorBarType>BOTH</yErrorBarType>
-    </traceSettingsList>
-    <traceSettingsList>
-        <antiAliasing>true</antiAliasing>
-        <areaAlpha>100</areaAlpha>
-        <baseLine>ZERO</baseLine>
-        <drawYErrorInArea>true</drawYErrorInArea>
-        <errorBarCapWidth>4</errorBarCapWidth>
-        <errorBarColor>
-            <blue>0</blue>
-            <green>0</green>
-            <red>0</red>
-        </errorBarColor>
-        <errorBarEnabled>true</errorBarEnabled>
-        <lineWidth>2</lineWidth>
-        <name>APFEL:ee-raspi0201:1:A:ps1:s1:id4:ch2:tp:sweep1_.DLY3</name>
-        <pointSize>2</pointSize>
-        <pointStyle>NONE</pointStyle>
-        <traceColor>
-            <blue>0</blue>
-            <green>0</green>
-            <red>0</red>
-        </traceColor>
-        <traceType>STEP_HORIZONTALLY</traceType>
-        <xAxis>0</xAxis>
-        <xErrorBarType>BOTH</xErrorBarType>
         <yAxis>3</yAxis>
         <yErrorBarType>BOTH</yErrorBarType>
     </traceSettingsList>
@@ -299,14 +272,41 @@
         <drawYErrorInArea>true</drawYErrorInArea>
         <errorBarCapWidth>4</errorBarCapWidth>
         <errorBarColor>
+            <blue>0</blue>
+            <green>0</green>
+            <red>0</red>
+        </errorBarColor>
+        <errorBarEnabled>true</errorBarEnabled>
+        <lineWidth>2</lineWidth>
+        <name>APFEL:ee-raspi0201:1:A:ps1:s1:id4:ch2:tp:seq.SEVR</name>
+        <pointSize>4</pointSize>
+        <pointStyle>NONE</pointStyle>
+        <traceColor>
+            <blue>0</blue>
+            <green>0</green>
+            <red>0</red>
+        </traceColor>
+        <traceType>STEP_HORIZONTALLY</traceType>
+        <xAxis>0</xAxis>
+        <xErrorBarType>BOTH</xErrorBarType>
+        <yAxis>2</yAxis>
+        <yErrorBarType>BOTH</yErrorBarType>
+    </traceSettingsList>
+    <traceSettingsList>
+        <antiAliasing>true</antiAliasing>
+        <areaAlpha>100</areaAlpha>
+        <baseLine>ZERO</baseLine>
+        <drawYErrorInArea>true</drawYErrorInArea>
+        <errorBarCapWidth>4</errorBarCapWidth>
+        <errorBarColor>
             <blue>255</blue>
             <green>0</green>
             <red>128</red>
         </errorBarColor>
         <errorBarEnabled>true</errorBarEnabled>
         <lineWidth>2</lineWidth>
-        <name>APFEL:ee-raspi0201:1:A:ps1:s1:id4:ch2:tp:seq.SEVR</name>
-        <pointSize>2</pointSize>
+        <name>APFEL:ee-raspi0201:1:A:ps1:s1:id4:ch2:tp:seq:started</name>
+        <pointSize>4</pointSize>
         <pointStyle>NONE</pointStyle>
         <traceColor>
             <blue>255</blue>
@@ -316,15 +316,15 @@
         <traceType>STEP_HORIZONTALLY</traceType>
         <xAxis>0</xAxis>
         <xErrorBarType>BOTH</xErrorBarType>
-        <yAxis>2</yAxis>
+        <yAxis>4</yAxis>
         <yErrorBarType>BOTH</yErrorBarType>
     </traceSettingsList>
     <transparent>false</transparent>
 </xyGraphSettings>
     <scroll>true</scroll>
     <update_period>1.0</update_period>
-    <start>2015/06/15 11:37:57.618</start>
-    <end>2015/06/15 11:37:59.194</end>
+    <start>2015/06/16 14:27:09.813</start>
+    <end>2015/06/16 14:29:36.257</end>
     <archive_rescale>AUTOZOOM</archive_rescale>
     <pvlist>
         <pv>
@@ -348,18 +348,9 @@
         <pv>
             <name>APFEL:ee-raspi0201:1:A:ps1:s1:id4:ch2:tp:seq:run</name>
             <visible>true</visible>
-            <axis>4</axis>
-            <waveform_index>0</waveform_index>
-            <period>0.0</period>
-            <ring_size>5000</ring_size>
-            <request>OPTIMIZED</request>
-        </pv>
-        <pv>
-            <name>APFEL:ee-raspi0201:1:A:ps1:s1:id4:ch2:tp:sweep1_.DLY3</name>
-            <visible>true</visible>
             <axis>3</axis>
             <waveform_index>0</waveform_index>
-            <period>1.0</period>
+            <period>0.0</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
         </pv>
@@ -367,6 +358,15 @@
             <name>APFEL:ee-raspi0201:1:A:ps1:s1:id4:ch2:tp:seq.SEVR</name>
             <visible>true</visible>
             <axis>2</axis>
+            <waveform_index>0</waveform_index>
+            <period>0.0</period>
+            <ring_size>5000</ring_size>
+            <request>OPTIMIZED</request>
+        </pv>
+        <pv>
+            <name>APFEL:ee-raspi0201:1:A:ps1:s1:id4:ch2:tp:seq:started</name>
+            <visible>true</visible>
+            <axis>4</axis>
             <waveform_index>0</waveform_index>
             <period>0.0</period>
             <ring_size>5000</ring_size>

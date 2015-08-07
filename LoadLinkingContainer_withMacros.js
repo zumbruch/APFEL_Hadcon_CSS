@@ -27,8 +27,6 @@ importPackage(Packages.java.lang);
 	  	//add linking container to widget
 	  	widget.addChildToBottom(linkingContainer);	
 	  
-	  var gridLayout = WidgetUtil.createWidgetModel("org.csstudio.opibuilder.widgets.gridLayout");
-	  widget.performAutosize();
-	  
+	  widget.performAutosize();  
 	  display.performAutosize();
 

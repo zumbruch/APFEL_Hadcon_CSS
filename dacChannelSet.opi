@@ -13,7 +13,7 @@
   <snap_to_geometry>true</snap_to_geometry>
   <show_grid>true</show_grid>
   <background_color>
-    <color red="240" green="240" blue="240" />
+    <color name="OPI_Background" red="255" green="255" blue="255" />
   </background_color>
   <foreground_color>
     <color red="192" green="192" blue="192" />
@@ -357,11 +357,11 @@
       <width>104</width>
       <border_style>0</border_style>
       <rules>
-        <rule name="dynamicGroupName" prop_id="group_name" out_exp="true">
+        <rule name="Switch Dec/Hex (dynamicGroupName)" prop_id="group_name" out_exp="true">
           <exp bool_exp="pv0 == 1">
             <value>"HexSet"</value>
           </exp>
-          <pv trig="true">loc://Hex_Deci_$(LCID)_$(dac)$(chipId)$(ADDRESS)(0.0)</pv>
+          <pv trig="true">loc://Hex_Deci_$(LCID)_$(dac)$(chipId)$(ADDRESS)&lt;VDouble&gt;(0.0)</pv>
         </rule>
       </rules>
       <border_width>1</border_width>
@@ -387,7 +387,7 @@
         <height_scalable>false</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>loc://Hex_Deci_$(LCID)_$(dac)$(chipId)$(ADDRESS)</pv_name>
+      <pv_name>loc://Hex_Deci_$(LCID)_$(dac)$(chipId)$(ADDRESS)&lt;VDouble&gt;(0.0)</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -415,8 +415,7 @@
       </border_color>
       <actions hook="false" hook_all="false" />
       <y>0</y>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+      <tooltip>use HEX values ($(pv_value))</tooltip>
       <x>105</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
