@@ -59,7 +59,7 @@
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>177</width>
+    <width>207</width>
     <border_style>0</border_style>
     <rules />
     <fc>false</fc>
@@ -184,7 +184,7 @@
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>135</width>
+      <width>165</width>
       <border_style>0</border_style>
       <rules />
       <fc>false</fc>
@@ -225,7 +225,7 @@
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
         </font>
-        <width>134</width>
+        <width>164</width>
         <border_style>0</border_style>
         <rules />
         <fc>false</fc>
@@ -329,7 +329,7 @@ $(pv_value)</tooltip>
           <font>
             <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
           </font>
-          <width>72</width>
+          <width>102</width>
           <border_style>0</border_style>
           <rules />
           <fc>false</fc>
@@ -370,7 +370,7 @@ $(pv_value)</tooltip>
             <font>
               <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
             </font>
-            <width>71</width>
+            <width>101</width>
             <border_style>0</border_style>
             <rules />
             <fc>false</fc>
@@ -409,7 +409,7 @@ $(pv_value)</tooltip>
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
+              <width>100</width>
               <border_style>3</border_style>
               <rules />
               <border_width>1</border_width>
@@ -452,7 +452,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
+              <width>100</width>
               <border_style>0</border_style>
               <push_action_index>0</push_action_index>
               <image></image>
@@ -517,7 +517,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
             <font>
               <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
             </font>
-            <width>71</width>
+            <width>101</width>
             <border_style>0</border_style>
             <rules />
             <fc>false</fc>
@@ -556,7 +556,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
+              <width>100</width>
               <border_style>3</border_style>
               <rules />
               <border_width>1</border_width>
@@ -599,7 +599,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
+              <width>100</width>
               <border_style>0</border_style>
               <push_action_index>0</push_action_index>
               <image></image>
@@ -682,7 +682,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
         </font>
-        <width>134</width>
+        <width>164</width>
         <border_style>0</border_style>
         <rules />
         <fc>false</fc>
@@ -786,7 +786,7 @@ $(pv_value)</tooltip>
           <font>
             <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
           </font>
-          <width>72</width>
+          <width>102</width>
           <border_style>0</border_style>
           <rules />
           <fc>false</fc>
@@ -827,7 +827,7 @@ $(pv_value)</tooltip>
             <font>
               <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
             </font>
-            <width>71</width>
+            <width>101</width>
             <border_style>0</border_style>
             <rules />
             <fc>false</fc>
@@ -866,7 +866,7 @@ $(pv_value)</tooltip>
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
+              <width>100</width>
               <border_style>3</border_style>
               <rules />
               <border_width>1</border_width>
@@ -909,7 +909,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
+              <width>100</width>
               <border_style>0</border_style>
               <push_action_index>0</push_action_index>
               <image></image>
@@ -974,7 +974,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
             <font>
               <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
             </font>
-            <width>71</width>
+            <width>101</width>
             <border_style>0</border_style>
             <rules />
             <fc>false</fc>
@@ -1013,7 +1013,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
+              <width>100</width>
               <border_style>3</border_style>
               <rules />
               <border_width>1</border_width>
@@ -1056,7 +1056,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
+              <width>100</width>
               <border_style>0</border_style>
               <push_action_index>0</push_action_index>
               <image></image>

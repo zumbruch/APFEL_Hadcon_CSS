@@ -20,7 +20,7 @@ widget.performAutosize();]]></scriptText>
   </scripts>
   <show_ruler>true</show_ruler>
   <height>550</height>
-  <name>Apfel ChipIds port $(portName) ps$(pinSet) s$(sideSelect)</name>
+  <name>Apfel ChipIds port $(portName) ps$(pinSet) s$(sideSelect) @ $(hadcon)</name>
   <snap_to_geometry>true</snap_to_geometry>
   <show_grid>true</show_grid>
   <background_color>
@@ -65,11 +65,11 @@ widget.performAutosize();]]></scriptText>
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>port $(portName) - pinSet: $(pinSet) - sideSelection: $(sideSelect)</text>
+    <text>$(hadcon) | port $(portName) - pinSet: $(pinSet) - sideSelection: $(sideSelect)</text>
     <font>
       <opifont.name fontName="Segoe UI" height="13" style="1">Header 2</opifont.name>
     </font>
-    <width>531</width>
+    <width>627</width>
     <border_style>0</border_style>
     <rules />
     <border_width>1</border_width>
