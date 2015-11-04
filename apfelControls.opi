@@ -39,7 +39,7 @@
     <visible>true</visible>
     <wuid>59065834:14ef883af0b:-66fc</wuid>
     <scripts />
-    <height>435</height>
+    <height>442</height>
     <name>controls</name>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -59,7 +59,7 @@
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>517</width>
+    <width>473</width>
     <border_style>0</border_style>
     <rules />
     <fc>false</fc>
@@ -99,7 +99,7 @@
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>442</width>
+      <width>472</width>
       <border_style>0</border_style>
       <rules />
       <fc>false</fc>
@@ -274,7 +274,7 @@ display.performAutosize();
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
         </font>
-        <width>182</width>
+        <width>212</width>
         <border_style>0</border_style>
         <rules />
         <fc>false</fc>
@@ -316,7 +316,7 @@ display.performAutosize();
           <font>
             <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
           </font>
-          <width>181</width>
+          <width>211</width>
           <border_style>4</border_style>
           <rules />
           <border_width>1</border_width>
