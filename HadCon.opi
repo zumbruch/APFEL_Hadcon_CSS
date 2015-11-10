@@ -77,9 +77,9 @@
         <include_parent_macros>true</include_parent_macros>
       </macros>
       <visible>true</visible>
-      <wuid>59065834:14ef883af0b:-61fc</wuid>
+      <wuid>e180c55:150ec79204a:-1e1b</wuid>
       <scripts />
-      <height>266</height>
+      <height>316</height>
       <name>Grouping Container_1</name>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -99,11 +99,11 @@
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>121</width>
+      <width>122</width>
       <border_style>0</border_style>
       <rules />
       <fc>false</fc>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <border_width>1</border_width>
       <border_color>
         <color red="0" green="128" blue="255" />
@@ -119,7 +119,7 @@
         <line_color>
           <color red="128" green="0" blue="255" />
         </line_color>
-        <wuid>59065834:14ef883af0b:-624e</wuid>
+        <wuid>e180c55:150ec79204a:-1e1a</wuid>
         <bg_gradient_color>
           <color red="255" green="255" blue="255" />
         </bg_gradient_color>
@@ -169,12 +169,65 @@ $(pv_value)</tooltip>
         <x>0</x>
         <gradient>false</gradient>
       </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <visible>true</visible>
+        <wuid>e180c55:150ec79204a:-1e12</wuid>
+        <scripts />
+        <height>27</height>
+        <style>0</style>
+        <name>Action Button</name>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <pv_name></pv_name>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <widget_type>Action Button</widget_type>
+        <enabled>true</enabled>
+        <text>RESET IOC</text>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <font>
+          <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+        </font>
+        <width>100</width>
+        <border_style>0</border_style>
+        <push_action_index>0</push_action_index>
+        <image>Pictures/reset.png</image>
+        <rules />
+        <pv_value />
+        <toggle_button>false</toggle_button>
+        <border_width>1</border_width>
+        <border_color>
+          <color red="255" green="128" blue="128" />
+        </border_color>
+        <y>288</y>
+        <actions hook="false" hook_all="false">
+          <action type="OPEN_OPI_IN_VIEW">
+            <path>ResetIOC.opi</path>
+            <macros>
+              <include_parent_macros>true</include_parent_macros>
+            </macros>
+            <Position>4</Position>
+            <description></description>
+          </action>
+        </actions>
+        <tooltip></tooltip>
+        <x>0</x>
+      </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
         <macros>
           <include_parent_macros>true</include_parent_macros>
         </macros>
         <visible>true</visible>
-        <wuid>321d70aa:14bea6595d9:1065</wuid>
+        <wuid>e180c55:150ec79204a:-1e19</wuid>
         <scripts />
         <height>79</height>
         <name>Grouping Container_1</name>
@@ -212,7 +265,7 @@ $(pv_value)</tooltip>
         <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
           <visible>true</visible>
           <vertical_alignment>1</vertical_alignment>
-          <wuid>321d70aa:14bea6595d9:104b</wuid>
+          <wuid>e180c55:150ec79204a:-1e18</wuid>
           <auto_size>false</auto_size>
           <scripts />
           <height>18</height>
@@ -252,7 +305,7 @@ $(pv_value)</tooltip>
         <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
           <visible>true</visible>
           <vertical_alignment>1</vertical_alignment>
-          <wuid>321d70aa:14bea6595d9:c50</wuid>
+          <wuid>e180c55:150ec79204a:-1e17</wuid>
           <auto_size>false</auto_size>
           <scripts />
           <height>78</height>
@@ -295,7 +348,7 @@ $(pv_value)</tooltip>
           <include_parent_macros>true</include_parent_macros>
         </macros>
         <visible>true</visible>
-        <wuid>321d70aa:14bea6595d9:1079</wuid>
+        <wuid>e180c55:150ec79204a:-1e16</wuid>
         <scripts />
         <height>79</height>
         <name>Grouping Container_2</name>
@@ -333,7 +386,7 @@ $(pv_value)</tooltip>
         <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
           <visible>true</visible>
           <vertical_alignment>1</vertical_alignment>
-          <wuid>321d70aa:14bea6595d9:105b</wuid>
+          <wuid>e180c55:150ec79204a:-1e15</wuid>
           <auto_size>false</auto_size>
           <scripts />
           <height>18</height>
@@ -373,7 +426,7 @@ $(pv_value)</tooltip>
         <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
           <visible>true</visible>
           <vertical_alignment>1</vertical_alignment>
-          <wuid>321d70aa:14bea6595d9:c63</wuid>
+          <wuid>e180c55:150ec79204a:-1e14</wuid>
           <auto_size>false</auto_size>
           <scripts />
           <height>78</height>
@@ -450,7 +503,7 @@ $(pv_value)</tooltip>
       </border_color>
       <y>0</y>
       <actions hook="false" hook_all="false" />
-      <x>123</x>
+      <x>124</x>
       <tooltip></tooltip>
       <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
         <macros>
