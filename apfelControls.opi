@@ -8,7 +8,7 @@
   <boy_version>3.2.16.20140409</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
-  <height>450</height>
+  <height>550</height>
   <name></name>
   <snap_to_geometry>true</snap_to_geometry>
   <show_grid>true</show_grid>
@@ -39,7 +39,7 @@
     <visible>true</visible>
     <wuid>59065834:14ef883af0b:-66fc</wuid>
     <scripts />
-    <height>442</height>
+    <height>519</height>
     <name>controls</name>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -79,7 +79,7 @@
       <visible>true</visible>
       <wuid>-6995f18d:14db369c602:-7dc9</wuid>
       <scripts />
-      <height>318</height>
+      <height>350</height>
       <name>controls</name>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -121,7 +121,7 @@
         <auto_size>true</auto_size>
         <scripts />
         <zoom_to_fit>false</zoom_to_fit>
-        <height>317</height>
+        <height>344</height>
         <name>HadCon</name>
         <scale_options>
           <width_scalable>true</width_scalable>
@@ -141,7 +141,7 @@
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
         </font>
-        <width>249</width>
+        <width>254</width>
         <border_style>0</border_style>
         <rules />
         <border_width>1</border_width>
@@ -296,7 +296,7 @@ display.performAutosize();
           <auto_size>true</auto_size>
           <scripts />
           <zoom_to_fit>false</zoom_to_fit>
-          <height>103</height>
+          <height>102</height>
           <name>template</name>
           <scale_options>
             <width_scalable>true</width_scalable>
@@ -316,7 +316,7 @@ display.performAutosize();
           <font>
             <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
           </font>
-          <width>338</width>
+          <width>335</width>
           <border_style>4</border_style>
           <rules />
           <border_width>1</border_width>
@@ -387,6 +387,47 @@ display.performAutosize();
         <grid_gap>10</grid_gap>
       </widget>
     </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <visible>true</visible>
+      <vertical_alignment>1</vertical_alignment>
+      <wuid>324e4e8:151103059df:-7837</wuid>
+      <auto_size>false</auto_size>
+      <scripts />
+      <height>35</height>
+      <name>Label</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <transparent>true</transparent>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Label</widget_type>
+      <enabled>true</enabled>
+      <text>NOTE:&#xD;
+There is NO communication to the APFELs unless the user triggers it, i.e. NO automatic update of any display!</text>
+      <font>
+        <opifont.name fontName="Default" height="9" style="2">Comment</opifont.name>
+      </font>
+      <width>600</width>
+      <border_style>1</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions hook="false" hook_all="false" />
+      <y>360</y>
+      <wrap_words>false</wrap_words>
+      <tooltip></tooltip>
+      <x>0</x>
+    </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -423,7 +464,7 @@ display.performAutosize();
       <border_color>
         <color red="0" green="128" blue="255" />
       </border_color>
-      <y>328</y>
+      <y>405</y>
       <actions hook="false" hook_all="false" />
       <x>0</x>
       <tooltip></tooltip>
