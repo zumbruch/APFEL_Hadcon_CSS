@@ -272,13 +272,13 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <off_label>Low</off_label>
+      <off_label>x32</off_label>
       <released_action_index>0</released_action_index>
       <widget_type>Boolean Button</widget_type>
       <enabled>true</enabled>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+        <fontdata fontName="Arial" height="8" style="1" />
       </font>
       <width>77</width>
       <border_style>0</border_style>
@@ -291,7 +291,7 @@ $(pv_value)</tooltip>
       <toggle_button>true</toggle_button>
       <show_confirm_dialog>0</show_confirm_dialog>
       <border_width>1</border_width>
-      <on_label>High</on_label>
+      <on_label>x16</on_label>
       <square_button>false</square_button>
       <border_color>
         <color red="0" green="128" blue="255" />
