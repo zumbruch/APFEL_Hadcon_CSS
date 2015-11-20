@@ -1,0 +1,95 @@
+#Fri Nov 20 15:17:38 CET 2015
+@org.csstudio.trends.databrowser2=3.2.17.20140409
+/instance/org.eclipse.egit.ui/commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>cosmetics&\#x0A;</message>\r\n<message>changed labels on amplification (low -&gt; x32, high -&gt; x16)&\#x0A;cosmetics</message>\r\n<message>chip status on Main Controls </message>\r\n<message>apfel16x16.opi\: added $(hadcon)&\#x0A;</message>\r\n<message>Bugfix\: exchanging C and F in documentation.&\#x0A;cosmetics</message>\r\n<message>graphical cosmetics</message>\r\n<message>apfel.opi\: added $(hadcon)&\#x0A;addressSelect\: broadened buttons</message>\r\n<message>Amplification\: inverted inverse logic now\: high\=1\:low\=0&\#x0A;dacChannel.opi\: shortcut macros</message>\r\n<message>test pulser improved</message>\r\n<message>new name scheme &\#x0A;new pictures&\#x0A;</message>\r\n</messages>
+@org.eclipse.ui.ide=3.7.0.v20110928-1505
+/instance/org.csstudio.opibuilder/top_opis=/Apfel/apfelControlsMain.opi,"Alias\=APFEL"|
+@org.eclipse.compare=3.5.202.R37x_v20111109-0800
+/instance/org.csstudio.trends.databrowser2/urls=
+/instance/org.eclipse.ui.views.log/show_filter_text=true
+@org.eclipse.ui.browser=3.3.101.v20111019-1723
+@org.csstudio.opibuilder=3.2.16.20140409
+/configuration/com.zeroturnaround.eclipse.optimizer/lastNotificationTime=1432827580971
+/instance/org.eclipse.help.base/scope=
+/instance/org.eclipse.ui.editors/overviewRuler_migration=migrated_3.1
+@org.csstudio.platform.libs.epics=3.2.0.20140409
+/instance/org.eclipse.core.resources/version=1
+@org.eclipse.core.resources=3.7.101.v20120125-1505
+/instance/org.eclipse.ui/showIntro=false
+/instance/org.eclipse.help.ui/browser.y=7
+/instance/org.eclipse.help.ui/browser.x=57
+/configuration/org.csstudio.platform.workspace.WorkspaceInfo/recent_workspaces=/D\:/CSS/workspaces/Apfel,/D\:/CSS/workspaces/Apfel_TEST,/D\:/CSS/workspaces/AtmelRegisters,/D\:/CSS/workspaces/Default,/D\:/CSS/workspaces/Default1,/C\:/Users/zumbruch/CSS-Workspaces/Default,
+/instance/org.eclipse.help.ui/browser.maximized=false
+/instance/org.eclipse.help.ui/browser.w=1424
+/instance/org.eclipse.ui.views.log/activate=true
+/instance/org.eclipse.ui.views.log/orderValue=-1
+/instance/org.eclipse.egit.ui/org.eclipse.egit.ui.internal.push.SimpleConfigurePushDialog_ADVANCED_MODE=true
+/instance/org.eclipse.jsch.core/org.eclipse.jsch.core.hasMigratedSsh2Preferences=true
+/instance/org.csstudio.opibuilder/schema_opi=/Apfel/settings/SNS_Schema.opi
+/instance/org.eclipse.egit.ui/BranchProjectTracker__D\:\\CSS\\workspaces\\Apfel\\Apfel\\.git_Initial=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="Initial">\r\n<project>/</project>\r\n</projects>
+@org.eclipse.gef=3.7.2.v20111106-2020
+/instance/org.eclipse.egit.ui/resourcehistory_compare_mode=true
+@org.eclipse.ui.workbench=3.7.1.v20120104-1859
+file_export_version=3.0
+/configuration/com.zeroturnaround.eclipse.optimizer/totalNotifications=1
+/instance/org.eclipse.help.ui/browser.h=963
+/instance/org.eclipse.egit.ui/BranchProjectTracker__D\:\\CSS\\workspaces\\Apfel\\Apfel\\.git_dev=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="dev">\r\n<project>/</project>\r\n</projects>
+/instance/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
+/instance/org.eclipse.team.ui/org.eclipse.team.ui.first_time=false
+/instance/org.csstudio.opibuilder/url_file_loading_timeout=500
+/instance/org.csstudio.trends.databrowser2/archives=
+/configuration/com.zeroturnaround.eclipse.optimizer/hasBeenClosedManually=true
+@org.eclipse.help.base=3.6.2.v201202080800
+@org.eclipse.core.net=1.2.100.I20110511-0800
+\!/=
+@org.eclipse.egit.ui=1.3.0.201202151440-r
+/instance/org.csstudio.email/smtp_host=smtp2010.gsi.de
+/configuration/org.csstudio.platform.workspace.WorkspaceInfo/show_dialog=true
+/instance/org.eclipse.ui.views.log/orderType=2
+/instance/org.eclipse.egit.core/RepositorySearchDialogDeepSearch=false
+/configuration/com.zeroturnaround.eclipse.optimizer/firstBootTime=17850
+/instance/org.eclipse.egit.core/RepositorySearchDialogSearchPath=D\:\\CSS\\workspaces\\Apfel\\Apfel
+/instance/org.eclipse.ui.browser/internalWebBrowserHistory=http\://controlsystemstudio.org/|*|http\://cs-studio.sourceforge.net/|*|
+/instance/org.eclipse.ui.views.log/groupBy=0
+@org.eclipse.ui.editors=3.7.0.v20110928-1504
+/instance/org.eclipse.jsch.core/SSH2HOME=C\:\\Users\\zumbruch\\ssh
+/instance/org.eclipse.jsch.core/CVSSSH2PreferencePage.PREF_AUTH_METHODS=gssapi-with-mic,publickey,password,keyboard-interactive
+/instance/org.eclipse.team.ui/org.eclipse.team.ui.sychronizing_default_participant_sec_id=1444751084421
+/instance/org.csstudio.opibuilder/font_file=/Apfel/settings/font.def
+/instance/org.eclipse.egit.ui/resourcehistory_graph_split=500,500
+/instance/org.eclipse.ui.ide/IMPORT_FILES_AND_FOLDERS_RELATIVE=true
+/configuration/com.zeroturnaround.eclipse.optimizer/installationGUID=JgsKOVd2Qp8UneSlsgr4gTSIfaJ0LsKYrfL9antJrfY\=
+/instance/org.eclipse.gef/org.eclipse.gef.psize=167
+@org.eclipse.ui.views.log=1.0.200.v20110404
+/instance/org.eclipse.egit.ui/BranchProjectTracker__D\:\\CSS\\workspaces\\Apfel\\Apfel\\.git_improvements=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="improvements">\r\n<project>/</project>\r\n</projects>
+/configuration/com.zeroturnaround.eclipse.optimizer/currentBootTime=13963
+/instance/org.eclipse.ui.views.log/column4=150
+/instance/org.eclipse.ui.editors/lineNumberRuler=true
+/instance/org.eclipse.ui.views.log/column3=150
+@org.csstudio.email=1.2.0.20140409
+/instance/org.eclipse.ui.views.log/column2=300
+/instance/org.csstudio.opibuilder/color_file=/Apfel/settings/color.def
+@org.eclipse.search=3.7.0.v20110928-1504
+/instance/org.eclipse.compare/org.eclipse.compare.NavigationEndAction=loop
+/instance/org.eclipse.egit.ui/show_initial_config_dialog=false
+/instance/org.eclipse.ui.browser/browsers=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<web-browsers current\="0">\r\n<system/>\r\n<external location\="C\:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" name\="Firefox"/>\r\n<external location\="C\:\\Program Files\\Internet Explorer\\iexplore.exe" name\="Internet Explorer"/>\r\n</web-browsers>
+/instance/org.eclipse.ui.ide/IMPORT_FILES_AND_FOLDERS_TYPE=23,1
+/instance/org.eclipse.jsch.core/org.eclipse.jsch.core.hasChangedDefaultWin32SshHome=true
+@org.eclipse.team.ui=3.6.101.R37x_v20111109-0800
+/instance/org.eclipse.search/org.eclipse.search.defaultPerspective=org.eclipse.search.defaultPerspective.none
+@org.eclipse.egit.core=1.3.0.201202151440-r
+/instance/org.csstudio.platform.libs.epics/addr_list=lxdvvm01 ee-raspi0201 ee-raspi0202 ee-raspi0203 ee-raspi_guest01
+/configuration/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
+/configuration/com.zeroturnaround.eclipse.optimizer/installationTimestamp=2015-03-26T09\:59\:16.633Z
+/instance/org.eclipse.egit.ui/resourcehistory_rev_split=700,300
+/instance/org.eclipse.egit.core/GitRepositoriesView.GitDirectories=D\:\\CSS\\workspaces\\Apfel\\Apfel\\.git;
+/instance/org.eclipse.egit.ui/BranchProjectTracker__D\:\\CSS\\workspaces\\Apfel\\Apfel\\.git_v2.0=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="v2.0">\r\n<project>/</project>\r\n</projects>
+/instance/org.eclipse.ui.workbench/org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<org.eclipse.ui.commands/>
+/instance/org.csstudio.opibuilder/show_compact_mode_dialog=false
+/instance/org.eclipse.egit.ui/BranchProjectTracker__D\:\\CSS\\workspaces\\Apfel\\Apfel\\.git_master=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="master">\r\n<project>/</project>\r\n</projects>
+@org.eclipse.help.ui=3.5.101.r37_20110819
+@org.eclipse.jsch.core=1.1.300.I20110514-0800
+/instance/org.eclipse.jsch.core/CVSSSH2PreferencePage.PREF_AUTH_METHODS_ORDER=gssapi-with-mic,publickey,password,keyboard-interactive
+@org.eclipse.ui=3.7.0.v20110928-1505
+/instance/org.eclipse.team.ui/org.eclipse.team.ui.sychronizing_default_participant=org.eclipse.egit.ui.modelCompareParticipant
+/configuration/com.zeroturnaround.eclipse.optimizer/lastBootTime=6058
+/instance/org.eclipse.gef/org.eclipse.gef.pstate=4
