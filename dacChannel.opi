@@ -466,12 +466,12 @@ $(pv_value)</tooltip>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <pnaid>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac)</pnaid>
-      <dacGet>$(pnaid)$(SUFFIX)</dacGet>
+      <dacGet>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac)$(SUFFIX)</dacGet>
       <dacSet>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):set$(SUFFIX)</dacSet>
       <dacGetHex>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):hex$(SUFFIX)</dacGetHex>
       <dacReadStatus>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):read:status$(SUFFIX)</dacReadStatus>
       <dacSetHex>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):set:hex$(SUFFIX)</dacSetHex>
-      <dacCopy>$(pnaid):copy$(SUFFIX)</dacCopy>
+      <dacCopy>$(PREFIX)$(NAME):$(ADDRESS):id$(chipID):dac$(dac):copy$(SUFFIX)</dacCopy>
     </macros>
     <visible>true</visible>
     <wuid>-44e60fd:14b2c12d03f:-7d80</wuid>

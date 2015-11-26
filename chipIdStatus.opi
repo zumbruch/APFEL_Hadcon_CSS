@@ -485,6 +485,351 @@ $(pv_value)</tooltip>
       <x>0</x>
     </widget>
   </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <visible>true</visible>
+    <wuid>e180c55:1508a791d62:4aa3</wuid>
+    <scripts />
+    <height>23</height>
+    <name>roundStatus_22</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>true</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>Grouping Container</widget_type>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <width>23</width>
+    <border_style>0</border_style>
+    <rules />
+    <fc>false</fc>
+    <lock_children>false</lock_children>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>233</y>
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>chipId.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+        </macros>
+        <replace>2</replace>
+        <description>open chipId</description>
+      </action>
+    </actions>
+    <x>229</x>
+    <tooltip></tooltip>
+    <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <visible>false</visible>
+      <wuid>e180c55:150ec46724f:374f</wuid>
+      <scripts />
+      <square_led>false</square_led>
+      <on_color>
+        <color red="0" green="255" blue="0" />
+      </on_color>
+      <height>22</height>
+      <data_type>0</data_type>
+      <name>LED</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <show_boolean_label>true</show_boolean_label>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <off_color>
+        <color name="Dark Gray Border" red="190" green="190" blue="190" />
+      </off_color>
+      <pv_name>$(PREFIX)$(NAME):$(ADDRESS):id$(chipId):status$(SUFFIX)</pv_name>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <foreground_color>
+        <color name="Text_ForeGround" red="0" green="0" blue="0" />
+      </foreground_color>
+      <off_label>$(chipIdHex)</off_label>
+      <widget_type>LED</widget_type>
+      <enabled>true</enabled>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <font>
+        <opifont.name fontName="Default" height="7" style="0">Fineprint</opifont.name>
+      </font>
+      <width>22</width>
+      <border_style>0</border_style>
+      <effect_3d>true</effect_3d>
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pvSev0&lt;4">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="1">
+            <value>false</value>
+          </exp>
+          <pv trig="true">$(pv_name)</pv>
+          <pv trig="true">sim://flipflop(30)</pv>
+        </rule>
+      </rules>
+      <pv_value />
+      <bit>-1</bit>
+      <border_width>1</border_width>
+      <on_label>$(chipIdHex)</on_label>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <actions hook="true" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>chipId.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <chipID>$(chipId)</chipID>
+          </macros>
+          <replace>2</replace>
+          <description>open chipId</description>
+        </action>
+      </actions>
+      <y>0</y>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <x>0</x>
+    </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <visible>true</visible>
+    <wuid>e180c55:1508a791d62:7832</wuid>
+    <scripts />
+    <height>23</height>
+    <name>4x</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>true</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>Grouping Container</widget_type>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <width>101</width>
+    <border_style>0</border_style>
+    <rules />
+    <fc>false</fc>
+    <lock_children>true</lock_children>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>168</y>
+    <actions hook="false" hook_all="false" />
+    <x>15</x>
+    <tooltip></tooltip>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <chipId>1</chipId>
+        <chipIdHex>$(chipId)</chipIdHex>
+      </macros>
+      <visible>true</visible>
+      <wuid>e180c55:1508a791d62:7833</wuid>
+      <auto_size>false</auto_size>
+      <scripts />
+      <zoom_to_fit>true</zoom_to_fit>
+      <height>22</height>
+      <name>1</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>chipIdStatus.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>roundStatus_22</group_name>
+      <enabled>false</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      </font>
+      <width>25</width>
+      <border_style>0</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>0</y>
+      <actions hook="false" hook_all="false" />
+      <x>0</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <chipId>2</chipId>
+        <chipIdHex>$(chipId)</chipIdHex>
+      </macros>
+      <visible>true</visible>
+      <wuid>e180c55:1508a791d62:7834</wuid>
+      <auto_size>false</auto_size>
+      <scripts />
+      <zoom_to_fit>true</zoom_to_fit>
+      <height>22</height>
+      <name>2</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>chipIdStatus.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>roundStatus_22</group_name>
+      <enabled>false</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      </font>
+      <width>25</width>
+      <border_style>0</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>0</y>
+      <actions hook="false" hook_all="false" />
+      <x>25</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <chipId>3</chipId>
+        <chipIdHex>$(chipId)</chipIdHex>
+      </macros>
+      <visible>true</visible>
+      <wuid>e180c55:1508a791d62:7835</wuid>
+      <auto_size>false</auto_size>
+      <scripts />
+      <zoom_to_fit>true</zoom_to_fit>
+      <height>22</height>
+      <name>3</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>chipIdStatus.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>roundStatus_22</group_name>
+      <enabled>false</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      </font>
+      <width>25</width>
+      <border_style>0</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>0</y>
+      <actions hook="false" hook_all="false" />
+      <x>50</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <chipId>4</chipId>
+        <chipIdHex>$(chipId)</chipIdHex>
+      </macros>
+      <visible>true</visible>
+      <wuid>e180c55:1508a791d62:7836</wuid>
+      <auto_size>false</auto_size>
+      <scripts />
+      <zoom_to_fit>true</zoom_to_fit>
+      <height>22</height>
+      <name>4</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <opi_file>chipIdStatus.opi</opi_file>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <group_name>roundStatus_22</group_name>
+      <enabled>false</enabled>
+      <widget_type>Linking Container</widget_type>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      </font>
+      <width>25</width>
+      <border_style>0</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <y>0</y>
+      <actions hook="false" hook_all="false" />
+      <x>75</x>
+      <tooltip></tooltip>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
+      <wuid>e180c55:1508a791d62:783d</wuid>
+      <number_of_columns>4</number_of_columns>
+      <name>Grid Layout</name>
+      <fill_grids>false</fill_grids>
+      <widget_type>Grid Layout</widget_type>
+      <grid_gap>0</grid_gap>
+    </widget>
+  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
     <wuid>-44e60fd:14b2c12d03f:-25bf</wuid>
     <number_of_columns>2</number_of_columns>

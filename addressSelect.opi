@@ -7,11 +7,11 @@
   <wuid>-49c63414:14bdb65202f:3426</wuid>
   <boy_version>3.2.16.20140409</boy_version>
   <scripts />
-  <show_ruler>true</show_ruler>
+  <show_ruler>false</show_ruler>
   <height>600</height>
   <name></name>
-  <snap_to_geometry>true</snap_to_geometry>
-  <show_grid>true</show_grid>
+  <snap_to_geometry>false</snap_to_geometry>
+  <show_grid>false</show_grid>
   <background_color>
     <color name="OPI_Background" red="255" green="255" blue="255" />
   </background_color>
@@ -39,7 +39,7 @@
     <visible>true</visible>
     <wuid>-49c63414:14be403d002:419f</wuid>
     <scripts />
-    <height>98</height>
+    <height>99</height>
     <name>Action</name>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -59,7 +59,7 @@
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>177</width>
+    <width>334</width>
     <border_style>0</border_style>
     <rules />
     <fc>false</fc>
@@ -184,7 +184,7 @@
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
-      <width>135</width>
+      <width>289</width>
       <border_style>0</border_style>
       <rules />
       <fc>false</fc>
@@ -225,7 +225,7 @@
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
         </font>
-        <width>134</width>
+        <width>288</width>
         <border_style>0</border_style>
         <rules />
         <fc>false</fc>
@@ -310,7 +310,7 @@ $(pv_value)</tooltip>
           <wuid>-49c63414:14be483761c:29e7</wuid>
           <scripts />
           <height>47</height>
-          <name>Grouping Container</name>
+          <name>Side Select 1/2</name>
           <scale_options>
             <width_scalable>true</width_scalable>
             <height_scalable>true</height_scalable>
@@ -329,7 +329,7 @@ $(pv_value)</tooltip>
           <font>
             <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
           </font>
-          <width>72</width>
+          <width>226</width>
           <border_style>0</border_style>
           <rules />
           <fc>false</fc>
@@ -348,7 +348,7 @@ $(pv_value)</tooltip>
               <sideSelect>0</sideSelect>
             </macros>
             <visible>true</visible>
-            <wuid>-49c63414:14be403d002:448d</wuid>
+            <wuid>e180c55:150ec46724f:4d8b</wuid>
             <scripts />
             <height>23</height>
             <name>sideSelect 0</name>
@@ -370,12 +370,12 @@ $(pv_value)</tooltip>
             <font>
               <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
             </font>
-            <width>71</width>
-            <border_style>0</border_style>
+            <width>225</width>
+            <border_style>15</border_style>
             <rules />
             <fc>false</fc>
             <lock_children>false</lock_children>
-            <border_width>1</border_width>
+            <border_width>0</border_width>
             <border_color>
               <color red="0" green="128" blue="255" />
             </border_color>
@@ -386,7 +386,7 @@ $(pv_value)</tooltip>
             <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
               <visible>true</visible>
               <vertical_alignment>1</vertical_alignment>
-              <wuid>321d70aa:14bea6595d9:6433</wuid>
+              <wuid>e180c55:150ec46724f:4d8c</wuid>
               <auto_size>false</auto_size>
               <scripts />
               <height>22</height>
@@ -409,7 +409,7 @@ $(pv_value)</tooltip>
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
+              <width>100</width>
               <border_style>3</border_style>
               <rules />
               <border_width>1</border_width>
@@ -424,38 +424,35 @@ $(pv_value)</tooltip>
 chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
               <x>0</x>
             </widget>
-            <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-              <border_alarm_sensitive>false</border_alarm_sensitive>
-              <visible>false</visible>
-              <wuid>-49c63414:14be403d002:448e</wuid>
+            <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+              <macros>
+                <include_parent_macros>true</include_parent_macros>
+              </macros>
+              <visible>true</visible>
+              <wuid>e180c55:150ec46724f:4d8d</wuid>
               <scripts />
-              <height>22</height>
-              <style>0</style>
-              <name>Action 1_0</name>
-              <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+              <height>23</height>
+              <name>active</name>
               <scale_options>
                 <width_scalable>true</width_scalable>
-                <height_scalable>false</height_scalable>
+                <height_scalable>true</height_scalable>
                 <keep_wh_ratio>false</keep_wh_ratio>
               </scale_options>
-              <pv_name></pv_name>
+              <transparent>false</transparent>
+              <show_scrollbar>false</show_scrollbar>
+              <foreground_color>
+                <color red="192" green="192" blue="192" />
+              </foreground_color>
               <background_color>
                 <color red="240" green="240" blue="240" />
               </background_color>
-              <foreground_color>
-                <color red="0" green="0" blue="0" />
-              </foreground_color>
-              <widget_type>Action Button</widget_type>
               <enabled>true</enabled>
-              <text>sideSelect $(sideSelect)</text>
-              <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+              <widget_type>Grouping Container</widget_type>
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
-              <border_style>0</border_style>
-              <push_action_index>0</push_action_index>
-              <image></image>
+              <width>224</width>
+              <border_style>15</border_style>
               <rules>
                 <rule name="Visible" prop_id="visible" out_exp="false">
                   <exp bool_exp="pvSev0 &lt; 4">
@@ -468,25 +465,170 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
                   <pv trig="true">sim://flipflop(30)</pv>
                 </rule>
               </rules>
-              <pv_value />
-              <toggle_button>false</toggle_button>
+              <fc>false</fc>
+              <lock_children>false</lock_children>
               <border_width>0</border_width>
               <border_color>
                 <color red="0" green="128" blue="255" />
               </border_color>
               <y>0</y>
-              <actions hook="false" hook_all="false">
-                <action type="OPEN_DISPLAY">
-                  <path>apfel.opi</path>
-                  <macros>
-                    <include_parent_macros>true</include_parent_macros>
-                  </macros>
-                  <replace>2</replace>
-                  <description></description>
-                </action>
-              </actions>
-              <tooltip>open chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+              <actions hook="false" hook_all="false" />
               <x>0</x>
+              <tooltip></tooltip>
+              <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+                <border_alarm_sensitive>false</border_alarm_sensitive>
+                <visible>true</visible>
+                <wuid>e180c55:150ec46724f:4d8e</wuid>
+                <scripts />
+                <height>22</height>
+                <style>0</style>
+                <name>Action 1_0</name>
+                <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+                <scale_options>
+                  <width_scalable>true</width_scalable>
+                  <height_scalable>false</height_scalable>
+                  <keep_wh_ratio>false</keep_wh_ratio>
+                </scale_options>
+                <pv_name></pv_name>
+                <background_color>
+                  <color red="240" green="240" blue="240" />
+                </background_color>
+                <foreground_color>
+                  <color red="0" green="0" blue="0" />
+                </foreground_color>
+                <widget_type>Action Button</widget_type>
+                <enabled>true</enabled>
+                <text>sideSelect $(sideSelect)</text>
+                <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+                <font>
+                  <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+                </font>
+                <width>100</width>
+                <border_style>0</border_style>
+                <push_action_index>0</push_action_index>
+                <image></image>
+                <rules />
+                <pv_value />
+                <toggle_button>false</toggle_button>
+                <border_width>0</border_width>
+                <border_color>
+                  <color red="0" green="128" blue="255" />
+                </border_color>
+                <y>0</y>
+                <actions hook="false" hook_all="false">
+                  <action type="OPEN_DISPLAY">
+                    <path>apfel.opi</path>
+                    <macros>
+                      <include_parent_macros>true</include_parent_macros>
+                    </macros>
+                    <replace>2</replace>
+                    <description></description>
+                  </action>
+                </actions>
+                <tooltip>open chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+                <x>0</x>
+              </widget>
+              <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+                <border_alarm_sensitive>false</border_alarm_sensitive>
+                <visible>true</visible>
+                <wuid>e180c55:150ec46724f:4d8f</wuid>
+                <scripts />
+                <height>22</height>
+                <style>0</style>
+                <name>Refresh Button</name>
+                <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+                <scale_options>
+                  <width_scalable>true</width_scalable>
+                  <height_scalable>true</height_scalable>
+                  <keep_wh_ratio>false</keep_wh_ratio>
+                </scale_options>
+                <pv_name>$(PREFIX)$(NAME):$(ADDRESS):listId$(SUFFIX)</pv_name>
+                <background_color>
+                  <color red="240" green="240" blue="240" />
+                </background_color>
+                <foreground_color>
+                  <color red="0" green="0" blue="0" />
+                </foreground_color>
+                <widget_type>Action Button</widget_type>
+                <enabled>true</enabled>
+                <text></text>
+                <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+                <font>
+                  <fontdata fontName="Segoe UI" height="1" style="0" />
+                </font>
+                <width>23</width>
+                <border_style>6</border_style>
+                <push_action_index>0</push_action_index>
+                <image>Pictures/reset.png</image>
+                <rules />
+                <pv_value />
+                <toggle_button>false</toggle_button>
+                <border_width>1</border_width>
+                <border_color>
+                  <color red="0" green="128" blue="255" />
+                </border_color>
+                <y>0</y>
+                <actions hook="false" hook_all="false">
+                  <action type="WRITE_PV">
+                    <pv_name>$(pv_name)</pv_name>
+                    <value>4</value>
+                    <timeout>10</timeout>
+                    <confirm_message></confirm_message>
+                    <description>Refresh Status</description>
+                  </action>
+                </actions>
+                <tooltip>refresh chipId status for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+                <x>100</x>
+              </widget>
+              <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+                <macros>
+                  <include_parent_macros>true</include_parent_macros>
+                </macros>
+                <visible>true</visible>
+                <wuid>e180c55:150ec46724f:4d90</wuid>
+                <auto_size>false</auto_size>
+                <scripts />
+                <zoom_to_fit>true</zoom_to_fit>
+                <height>22</height>
+                <name>Status</name>
+                <scale_options>
+                  <width_scalable>true</width_scalable>
+                  <height_scalable>true</height_scalable>
+                  <keep_wh_ratio>false</keep_wh_ratio>
+                </scale_options>
+                <opi_file>chipIdStatus.opi</opi_file>
+                <foreground_color>
+                  <color red="192" green="192" blue="192" />
+                </foreground_color>
+                <background_color>
+                  <color red="240" green="240" blue="240" />
+                </background_color>
+                <group_name>4x</group_name>
+                <enabled>true</enabled>
+                <widget_type>Linking Container</widget_type>
+                <font>
+                  <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+                </font>
+                <width>101</width>
+                <border_style>0</border_style>
+                <rules />
+                <border_width>1</border_width>
+                <border_color>
+                  <color red="0" green="128" blue="255" />
+                </border_color>
+                <y>0</y>
+                <actions hook="false" hook_all="false" />
+                <x>122</x>
+                <tooltip></tooltip>
+              </widget>
+              <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
+                <wuid>e180c55:150ec46724f:4d91</wuid>
+                <number_of_columns>3</number_of_columns>
+                <name>Grid Layout</name>
+                <fill_grids>false</fill_grids>
+                <widget_type>Grid Layout</widget_type>
+                <grid_gap>0</grid_gap>
+              </widget>
             </widget>
           </widget>
           <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -495,7 +637,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               <sideSelect>1</sideSelect>
             </macros>
             <visible>true</visible>
-            <wuid>-49c63414:14be403d002:448f</wuid>
+            <wuid>e180c55:150ec46724f:-4c60</wuid>
             <scripts />
             <height>23</height>
             <name>sideSelect 1</name>
@@ -517,12 +659,12 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
             <font>
               <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
             </font>
-            <width>71</width>
-            <border_style>0</border_style>
+            <width>225</width>
+            <border_style>15</border_style>
             <rules />
             <fc>false</fc>
             <lock_children>false</lock_children>
-            <border_width>1</border_width>
+            <border_width>0</border_width>
             <border_color>
               <color red="0" green="128" blue="255" />
             </border_color>
@@ -533,7 +675,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
             <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
               <visible>true</visible>
               <vertical_alignment>1</vertical_alignment>
-              <wuid>321d70aa:14bea6595d9:6431</wuid>
+              <wuid>e180c55:150ec46724f:-4c5f</wuid>
               <auto_size>false</auto_size>
               <scripts />
               <height>22</height>
@@ -556,7 +698,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
+              <width>100</width>
               <border_style>3</border_style>
               <rules />
               <border_width>1</border_width>
@@ -571,38 +713,35 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
 chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
               <x>0</x>
             </widget>
-            <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-              <border_alarm_sensitive>false</border_alarm_sensitive>
-              <visible>false</visible>
-              <wuid>-49c63414:14be403d002:4490</wuid>
+            <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+              <macros>
+                <include_parent_macros>true</include_parent_macros>
+              </macros>
+              <visible>true</visible>
+              <wuid>e180c55:150ec46724f:-4c5e</wuid>
               <scripts />
-              <height>22</height>
-              <style>0</style>
-              <name>Action 1_1</name>
-              <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+              <height>23</height>
+              <name>active</name>
               <scale_options>
                 <width_scalable>true</width_scalable>
-                <height_scalable>false</height_scalable>
+                <height_scalable>true</height_scalable>
                 <keep_wh_ratio>false</keep_wh_ratio>
               </scale_options>
-              <pv_name></pv_name>
+              <transparent>false</transparent>
+              <show_scrollbar>false</show_scrollbar>
+              <foreground_color>
+                <color red="192" green="192" blue="192" />
+              </foreground_color>
               <background_color>
                 <color red="240" green="240" blue="240" />
               </background_color>
-              <foreground_color>
-                <color red="0" green="0" blue="0" />
-              </foreground_color>
-              <widget_type>Action Button</widget_type>
               <enabled>true</enabled>
-              <text>sideSelect $(sideSelect)</text>
-              <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+              <widget_type>Grouping Container</widget_type>
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
-              <border_style>0</border_style>
-              <push_action_index>0</push_action_index>
-              <image></image>
+              <width>224</width>
+              <border_style>15</border_style>
               <rules>
                 <rule name="Visible" prop_id="visible" out_exp="false">
                   <exp bool_exp="pvSev0 &lt; 4">
@@ -615,25 +754,170 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
                   <pv trig="true">sim://flipflop(30)</pv>
                 </rule>
               </rules>
-              <pv_value />
-              <toggle_button>false</toggle_button>
+              <fc>false</fc>
+              <lock_children>false</lock_children>
               <border_width>0</border_width>
               <border_color>
                 <color red="0" green="128" blue="255" />
               </border_color>
               <y>0</y>
-              <actions hook="false" hook_all="false">
-                <action type="OPEN_DISPLAY">
-                  <path>apfel.opi</path>
-                  <macros>
-                    <include_parent_macros>true</include_parent_macros>
-                  </macros>
-                  <replace>2</replace>
-                  <description></description>
-                </action>
-              </actions>
-              <tooltip>open chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+              <actions hook="false" hook_all="false" />
               <x>0</x>
+              <tooltip></tooltip>
+              <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+                <border_alarm_sensitive>false</border_alarm_sensitive>
+                <visible>true</visible>
+                <wuid>e180c55:150ec46724f:-4c5d</wuid>
+                <scripts />
+                <height>22</height>
+                <style>0</style>
+                <name>Action 1_0</name>
+                <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+                <scale_options>
+                  <width_scalable>true</width_scalable>
+                  <height_scalable>false</height_scalable>
+                  <keep_wh_ratio>false</keep_wh_ratio>
+                </scale_options>
+                <pv_name></pv_name>
+                <background_color>
+                  <color red="240" green="240" blue="240" />
+                </background_color>
+                <foreground_color>
+                  <color red="0" green="0" blue="0" />
+                </foreground_color>
+                <widget_type>Action Button</widget_type>
+                <enabled>true</enabled>
+                <text>sideSelect $(sideSelect)</text>
+                <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+                <font>
+                  <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+                </font>
+                <width>100</width>
+                <border_style>0</border_style>
+                <push_action_index>0</push_action_index>
+                <image></image>
+                <rules />
+                <pv_value />
+                <toggle_button>false</toggle_button>
+                <border_width>0</border_width>
+                <border_color>
+                  <color red="0" green="128" blue="255" />
+                </border_color>
+                <y>0</y>
+                <actions hook="false" hook_all="false">
+                  <action type="OPEN_DISPLAY">
+                    <path>apfel.opi</path>
+                    <macros>
+                      <include_parent_macros>true</include_parent_macros>
+                    </macros>
+                    <replace>2</replace>
+                    <description></description>
+                  </action>
+                </actions>
+                <tooltip>open chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+                <x>0</x>
+              </widget>
+              <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+                <border_alarm_sensitive>false</border_alarm_sensitive>
+                <visible>true</visible>
+                <wuid>e180c55:150ec46724f:-4c5c</wuid>
+                <scripts />
+                <height>22</height>
+                <style>0</style>
+                <name>Refresh Button</name>
+                <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+                <scale_options>
+                  <width_scalable>true</width_scalable>
+                  <height_scalable>true</height_scalable>
+                  <keep_wh_ratio>false</keep_wh_ratio>
+                </scale_options>
+                <pv_name>$(PREFIX)$(NAME):$(ADDRESS):listId$(SUFFIX)</pv_name>
+                <background_color>
+                  <color red="240" green="240" blue="240" />
+                </background_color>
+                <foreground_color>
+                  <color red="0" green="0" blue="0" />
+                </foreground_color>
+                <widget_type>Action Button</widget_type>
+                <enabled>true</enabled>
+                <text></text>
+                <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+                <font>
+                  <fontdata fontName="Segoe UI" height="1" style="0" />
+                </font>
+                <width>23</width>
+                <border_style>6</border_style>
+                <push_action_index>0</push_action_index>
+                <image>Pictures/reset.png</image>
+                <rules />
+                <pv_value />
+                <toggle_button>false</toggle_button>
+                <border_width>1</border_width>
+                <border_color>
+                  <color red="0" green="128" blue="255" />
+                </border_color>
+                <y>0</y>
+                <actions hook="false" hook_all="false">
+                  <action type="WRITE_PV">
+                    <pv_name>$(pv_name)</pv_name>
+                    <value>4</value>
+                    <timeout>10</timeout>
+                    <confirm_message></confirm_message>
+                    <description>Refresh Status</description>
+                  </action>
+                </actions>
+                <tooltip>refresh chipId status for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+                <x>100</x>
+              </widget>
+              <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+                <macros>
+                  <include_parent_macros>true</include_parent_macros>
+                </macros>
+                <visible>true</visible>
+                <wuid>e180c55:150ec46724f:-4c5b</wuid>
+                <auto_size>false</auto_size>
+                <scripts />
+                <zoom_to_fit>true</zoom_to_fit>
+                <height>22</height>
+                <name>Status</name>
+                <scale_options>
+                  <width_scalable>true</width_scalable>
+                  <height_scalable>true</height_scalable>
+                  <keep_wh_ratio>false</keep_wh_ratio>
+                </scale_options>
+                <opi_file>chipIdStatus.opi</opi_file>
+                <foreground_color>
+                  <color red="192" green="192" blue="192" />
+                </foreground_color>
+                <background_color>
+                  <color red="240" green="240" blue="240" />
+                </background_color>
+                <group_name>4x</group_name>
+                <enabled>true</enabled>
+                <widget_type>Linking Container</widget_type>
+                <font>
+                  <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+                </font>
+                <width>101</width>
+                <border_style>0</border_style>
+                <rules />
+                <border_width>1</border_width>
+                <border_color>
+                  <color red="0" green="128" blue="255" />
+                </border_color>
+                <y>0</y>
+                <actions hook="false" hook_all="false" />
+                <x>122</x>
+                <tooltip></tooltip>
+              </widget>
+              <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
+                <wuid>e180c55:150ec46724f:-4c5a</wuid>
+                <number_of_columns>3</number_of_columns>
+                <name>Grid Layout</name>
+                <fill_grids>false</fill_grids>
+                <widget_type>Grid Layout</widget_type>
+                <grid_gap>0</grid_gap>
+              </widget>
             </widget>
           </widget>
           <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
@@ -647,7 +931,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
           <wuid>-49c63414:14be403d002:4491</wuid>
-          <number_of_columns>3</number_of_columns>
+          <number_of_columns>4</number_of_columns>
           <name>Grid Layout</name>
           <fill_grids>true</fill_grids>
           <widget_type>Grid Layout</widget_type>
@@ -660,7 +944,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
           <pinSet>2</pinSet>
         </macros>
         <visible>true</visible>
-        <wuid>-534ef5a1:14be9f9418a:-6103</wuid>
+        <wuid>e180c55:150ec46724f:-4a13</wuid>
         <scripts />
         <height>48</height>
         <name>pinSet 2</name>
@@ -682,7 +966,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
         </font>
-        <width>134</width>
+        <width>288</width>
         <border_style>0</border_style>
         <rules />
         <fc>false</fc>
@@ -691,18 +975,18 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
         <border_color>
           <color red="0" green="128" blue="255" />
         </border_color>
-        <y>48</y>
+        <y>50</y>
         <actions hook="false" hook_all="false" />
         <x>0</x>
         <tooltip></tooltip>
         <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
           <border_alarm_sensitive>false</border_alarm_sensitive>
           <visible>true</visible>
-          <wuid>-534ef5a1:14be9f9418a:-6102</wuid>
+          <wuid>e180c55:150ec46724f:-48ce</wuid>
           <scripts />
           <height>47</height>
           <style>0</style>
-          <name>Check Box_5</name>
+          <name>Check Box_1</name>
           <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
           <scale_options>
             <width_scalable>true</width_scalable>
@@ -764,10 +1048,10 @@ $(pv_value)</tooltip>
             <include_parent_macros>true</include_parent_macros>
           </macros>
           <visible>true</visible>
-          <wuid>-534ef5a1:14be9f9418a:-6101</wuid>
+          <wuid>e180c55:150ec46724f:-4a11</wuid>
           <scripts />
           <height>47</height>
-          <name>Grouping Container</name>
+          <name>Side Select 1/2</name>
           <scale_options>
             <width_scalable>true</width_scalable>
             <height_scalable>true</height_scalable>
@@ -786,7 +1070,7 @@ $(pv_value)</tooltip>
           <font>
             <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
           </font>
-          <width>72</width>
+          <width>226</width>
           <border_style>0</border_style>
           <rules />
           <fc>false</fc>
@@ -805,7 +1089,7 @@ $(pv_value)</tooltip>
               <sideSelect>0</sideSelect>
             </macros>
             <visible>true</visible>
-            <wuid>-534ef5a1:14be9f9418a:-6100</wuid>
+            <wuid>e180c55:150ec46724f:-4a10</wuid>
             <scripts />
             <height>23</height>
             <name>sideSelect 0</name>
@@ -827,12 +1111,12 @@ $(pv_value)</tooltip>
             <font>
               <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
             </font>
-            <width>71</width>
-            <border_style>0</border_style>
+            <width>225</width>
+            <border_style>15</border_style>
             <rules />
             <fc>false</fc>
-            <lock_children>false</lock_children>
-            <border_width>1</border_width>
+            <lock_children>true</lock_children>
+            <border_width>0</border_width>
             <border_color>
               <color red="0" green="128" blue="255" />
             </border_color>
@@ -843,7 +1127,7 @@ $(pv_value)</tooltip>
             <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
               <visible>true</visible>
               <vertical_alignment>1</vertical_alignment>
-              <wuid>321d70aa:14bea6595d9:642f</wuid>
+              <wuid>e180c55:150ec46724f:-4a0f</wuid>
               <auto_size>false</auto_size>
               <scripts />
               <height>22</height>
@@ -866,7 +1150,7 @@ $(pv_value)</tooltip>
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
+              <width>100</width>
               <border_style>3</border_style>
               <rules />
               <border_width>1</border_width>
@@ -881,38 +1165,35 @@ $(pv_value)</tooltip>
 chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
               <x>0</x>
             </widget>
-            <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-              <border_alarm_sensitive>false</border_alarm_sensitive>
-              <visible>false</visible>
-              <wuid>-534ef5a1:14be9f9418a:-60ff</wuid>
+            <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+              <macros>
+                <include_parent_macros>true</include_parent_macros>
+              </macros>
+              <visible>true</visible>
+              <wuid>e180c55:150ec46724f:-4a0e</wuid>
               <scripts />
-              <height>22</height>
-              <style>0</style>
-              <name>Action 2_0</name>
-              <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+              <height>23</height>
+              <name>active</name>
               <scale_options>
                 <width_scalable>true</width_scalable>
-                <height_scalable>false</height_scalable>
+                <height_scalable>true</height_scalable>
                 <keep_wh_ratio>false</keep_wh_ratio>
               </scale_options>
-              <pv_name></pv_name>
+              <transparent>false</transparent>
+              <show_scrollbar>false</show_scrollbar>
+              <foreground_color>
+                <color red="192" green="192" blue="192" />
+              </foreground_color>
               <background_color>
                 <color red="240" green="240" blue="240" />
               </background_color>
-              <foreground_color>
-                <color red="0" green="0" blue="0" />
-              </foreground_color>
-              <widget_type>Action Button</widget_type>
               <enabled>true</enabled>
-              <text>sideSelect $(sideSelect)</text>
-              <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+              <widget_type>Grouping Container</widget_type>
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
-              <border_style>0</border_style>
-              <push_action_index>0</push_action_index>
-              <image></image>
+              <width>224</width>
+              <border_style>15</border_style>
               <rules>
                 <rule name="Visible" prop_id="visible" out_exp="false">
                   <exp bool_exp="pvSev0 &lt; 4">
@@ -925,25 +1206,170 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
                   <pv trig="true">sim://flipflop(30)</pv>
                 </rule>
               </rules>
-              <pv_value />
-              <toggle_button>false</toggle_button>
+              <fc>false</fc>
+              <lock_children>false</lock_children>
               <border_width>0</border_width>
               <border_color>
                 <color red="0" green="128" blue="255" />
               </border_color>
               <y>0</y>
-              <actions hook="false" hook_all="false">
-                <action type="OPEN_DISPLAY">
-                  <path>apfel.opi</path>
-                  <macros>
-                    <include_parent_macros>true</include_parent_macros>
-                  </macros>
-                  <replace>2</replace>
-                  <description></description>
-                </action>
-              </actions>
-              <tooltip>open chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+              <actions hook="false" hook_all="false" />
               <x>0</x>
+              <tooltip></tooltip>
+              <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+                <border_alarm_sensitive>false</border_alarm_sensitive>
+                <visible>true</visible>
+                <wuid>e180c55:150ec46724f:-4a0d</wuid>
+                <scripts />
+                <height>22</height>
+                <style>0</style>
+                <name>Action 1_0</name>
+                <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+                <scale_options>
+                  <width_scalable>true</width_scalable>
+                  <height_scalable>false</height_scalable>
+                  <keep_wh_ratio>false</keep_wh_ratio>
+                </scale_options>
+                <pv_name></pv_name>
+                <background_color>
+                  <color red="240" green="240" blue="240" />
+                </background_color>
+                <foreground_color>
+                  <color red="0" green="0" blue="0" />
+                </foreground_color>
+                <widget_type>Action Button</widget_type>
+                <enabled>true</enabled>
+                <text>sideSelect $(sideSelect)</text>
+                <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+                <font>
+                  <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+                </font>
+                <width>100</width>
+                <border_style>0</border_style>
+                <push_action_index>0</push_action_index>
+                <image></image>
+                <rules />
+                <pv_value />
+                <toggle_button>false</toggle_button>
+                <border_width>0</border_width>
+                <border_color>
+                  <color red="0" green="128" blue="255" />
+                </border_color>
+                <y>0</y>
+                <actions hook="false" hook_all="false">
+                  <action type="OPEN_DISPLAY">
+                    <path>apfel.opi</path>
+                    <macros>
+                      <include_parent_macros>true</include_parent_macros>
+                    </macros>
+                    <replace>2</replace>
+                    <description></description>
+                  </action>
+                </actions>
+                <tooltip>open chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+                <x>0</x>
+              </widget>
+              <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+                <border_alarm_sensitive>false</border_alarm_sensitive>
+                <visible>true</visible>
+                <wuid>e180c55:150ec46724f:-4a0c</wuid>
+                <scripts />
+                <height>22</height>
+                <style>0</style>
+                <name>Refresh Button</name>
+                <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+                <scale_options>
+                  <width_scalable>true</width_scalable>
+                  <height_scalable>true</height_scalable>
+                  <keep_wh_ratio>false</keep_wh_ratio>
+                </scale_options>
+                <pv_name>$(PREFIX)$(NAME):$(ADDRESS):listId$(SUFFIX)</pv_name>
+                <background_color>
+                  <color red="240" green="240" blue="240" />
+                </background_color>
+                <foreground_color>
+                  <color red="0" green="0" blue="0" />
+                </foreground_color>
+                <widget_type>Action Button</widget_type>
+                <enabled>true</enabled>
+                <text></text>
+                <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+                <font>
+                  <fontdata fontName="Segoe UI" height="1" style="0" />
+                </font>
+                <width>23</width>
+                <border_style>6</border_style>
+                <push_action_index>0</push_action_index>
+                <image>Pictures/reset.png</image>
+                <rules />
+                <pv_value />
+                <toggle_button>false</toggle_button>
+                <border_width>1</border_width>
+                <border_color>
+                  <color red="0" green="128" blue="255" />
+                </border_color>
+                <y>0</y>
+                <actions hook="false" hook_all="false">
+                  <action type="WRITE_PV">
+                    <pv_name>$(pv_name)</pv_name>
+                    <value>4</value>
+                    <timeout>10</timeout>
+                    <confirm_message></confirm_message>
+                    <description>Refresh Status</description>
+                  </action>
+                </actions>
+                <tooltip>refresh chipId status for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+                <x>100</x>
+              </widget>
+              <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+                <macros>
+                  <include_parent_macros>true</include_parent_macros>
+                </macros>
+                <visible>true</visible>
+                <wuid>e180c55:150ec46724f:-4a0b</wuid>
+                <auto_size>false</auto_size>
+                <scripts />
+                <zoom_to_fit>true</zoom_to_fit>
+                <height>22</height>
+                <name>Status</name>
+                <scale_options>
+                  <width_scalable>true</width_scalable>
+                  <height_scalable>true</height_scalable>
+                  <keep_wh_ratio>false</keep_wh_ratio>
+                </scale_options>
+                <opi_file>chipIdStatus.opi</opi_file>
+                <foreground_color>
+                  <color red="192" green="192" blue="192" />
+                </foreground_color>
+                <background_color>
+                  <color red="240" green="240" blue="240" />
+                </background_color>
+                <group_name>4x</group_name>
+                <enabled>true</enabled>
+                <widget_type>Linking Container</widget_type>
+                <font>
+                  <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+                </font>
+                <width>101</width>
+                <border_style>0</border_style>
+                <rules />
+                <border_width>1</border_width>
+                <border_color>
+                  <color red="0" green="128" blue="255" />
+                </border_color>
+                <y>0</y>
+                <actions hook="false" hook_all="false" />
+                <x>122</x>
+                <tooltip></tooltip>
+              </widget>
+              <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
+                <wuid>e180c55:150ec46724f:-4a0a</wuid>
+                <number_of_columns>3</number_of_columns>
+                <name>Grid Layout</name>
+                <fill_grids>false</fill_grids>
+                <widget_type>Grid Layout</widget_type>
+                <grid_gap>0</grid_gap>
+              </widget>
             </widget>
           </widget>
           <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -952,7 +1378,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               <sideSelect>1</sideSelect>
             </macros>
             <visible>true</visible>
-            <wuid>-534ef5a1:14be9f9418a:-60fe</wuid>
+            <wuid>e180c55:150ec46724f:-4a09</wuid>
             <scripts />
             <height>23</height>
             <name>sideSelect 1</name>
@@ -974,12 +1400,12 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
             <font>
               <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
             </font>
-            <width>71</width>
-            <border_style>0</border_style>
+            <width>225</width>
+            <border_style>15</border_style>
             <rules />
             <fc>false</fc>
-            <lock_children>false</lock_children>
-            <border_width>1</border_width>
+            <lock_children>true</lock_children>
+            <border_width>0</border_width>
             <border_color>
               <color red="0" green="128" blue="255" />
             </border_color>
@@ -990,7 +1416,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
             <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
               <visible>true</visible>
               <vertical_alignment>1</vertical_alignment>
-              <wuid>321d70aa:14bea6595d9:6430</wuid>
+              <wuid>e180c55:150ec46724f:-4a08</wuid>
               <auto_size>false</auto_size>
               <scripts />
               <height>22</height>
@@ -1013,7 +1439,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
+              <width>100</width>
               <border_style>3</border_style>
               <rules />
               <border_width>1</border_width>
@@ -1028,38 +1454,35 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
 chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
               <x>0</x>
             </widget>
-            <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-              <border_alarm_sensitive>false</border_alarm_sensitive>
-              <visible>false</visible>
-              <wuid>-534ef5a1:14be9f9418a:-60fd</wuid>
+            <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+              <macros>
+                <include_parent_macros>true</include_parent_macros>
+              </macros>
+              <visible>true</visible>
+              <wuid>e180c55:150ec46724f:-4a07</wuid>
               <scripts />
-              <height>22</height>
-              <style>0</style>
-              <name>Action 2_1</name>
-              <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+              <height>23</height>
+              <name>active</name>
               <scale_options>
                 <width_scalable>true</width_scalable>
-                <height_scalable>false</height_scalable>
+                <height_scalable>true</height_scalable>
                 <keep_wh_ratio>false</keep_wh_ratio>
               </scale_options>
-              <pv_name></pv_name>
+              <transparent>false</transparent>
+              <show_scrollbar>false</show_scrollbar>
+              <foreground_color>
+                <color red="192" green="192" blue="192" />
+              </foreground_color>
               <background_color>
                 <color red="240" green="240" blue="240" />
               </background_color>
-              <foreground_color>
-                <color red="0" green="0" blue="0" />
-              </foreground_color>
-              <widget_type>Action Button</widget_type>
               <enabled>true</enabled>
-              <text>sideSelect $(sideSelect)</text>
-              <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+              <widget_type>Grouping Container</widget_type>
               <font>
                 <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
               </font>
-              <width>70</width>
-              <border_style>0</border_style>
-              <push_action_index>0</push_action_index>
-              <image></image>
+              <width>224</width>
+              <border_style>15</border_style>
               <rules>
                 <rule name="Visible" prop_id="visible" out_exp="false">
                   <exp bool_exp="pvSev0 &lt; 4">
@@ -1072,29 +1495,174 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
                   <pv trig="true">sim://flipflop(30)</pv>
                 </rule>
               </rules>
-              <pv_value />
-              <toggle_button>false</toggle_button>
+              <fc>false</fc>
+              <lock_children>false</lock_children>
               <border_width>0</border_width>
               <border_color>
                 <color red="0" green="128" blue="255" />
               </border_color>
               <y>0</y>
-              <actions hook="false" hook_all="false">
-                <action type="OPEN_DISPLAY">
-                  <path>apfel.opi</path>
-                  <macros>
-                    <include_parent_macros>true</include_parent_macros>
-                  </macros>
-                  <replace>2</replace>
-                  <description></description>
-                </action>
-              </actions>
-              <tooltip>open chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+              <actions hook="false" hook_all="false" />
               <x>0</x>
+              <tooltip></tooltip>
+              <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+                <border_alarm_sensitive>false</border_alarm_sensitive>
+                <visible>true</visible>
+                <wuid>e180c55:150ec46724f:-4a06</wuid>
+                <scripts />
+                <height>22</height>
+                <style>0</style>
+                <name>Action 1_0</name>
+                <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+                <scale_options>
+                  <width_scalable>true</width_scalable>
+                  <height_scalable>false</height_scalable>
+                  <keep_wh_ratio>false</keep_wh_ratio>
+                </scale_options>
+                <pv_name></pv_name>
+                <background_color>
+                  <color red="240" green="240" blue="240" />
+                </background_color>
+                <foreground_color>
+                  <color red="0" green="0" blue="0" />
+                </foreground_color>
+                <widget_type>Action Button</widget_type>
+                <enabled>true</enabled>
+                <text>sideSelect $(sideSelect)</text>
+                <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+                <font>
+                  <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+                </font>
+                <width>100</width>
+                <border_style>0</border_style>
+                <push_action_index>0</push_action_index>
+                <image></image>
+                <rules />
+                <pv_value />
+                <toggle_button>false</toggle_button>
+                <border_width>0</border_width>
+                <border_color>
+                  <color red="0" green="128" blue="255" />
+                </border_color>
+                <y>0</y>
+                <actions hook="false" hook_all="false">
+                  <action type="OPEN_DISPLAY">
+                    <path>apfel.opi</path>
+                    <macros>
+                      <include_parent_macros>true</include_parent_macros>
+                    </macros>
+                    <replace>2</replace>
+                    <description></description>
+                  </action>
+                </actions>
+                <tooltip>open chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+                <x>0</x>
+              </widget>
+              <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+                <border_alarm_sensitive>false</border_alarm_sensitive>
+                <visible>true</visible>
+                <wuid>e180c55:150ec46724f:-4a05</wuid>
+                <scripts />
+                <height>22</height>
+                <style>0</style>
+                <name>Refresh Button</name>
+                <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+                <scale_options>
+                  <width_scalable>true</width_scalable>
+                  <height_scalable>true</height_scalable>
+                  <keep_wh_ratio>false</keep_wh_ratio>
+                </scale_options>
+                <pv_name>$(PREFIX)$(NAME):$(ADDRESS):listId$(SUFFIX)</pv_name>
+                <background_color>
+                  <color red="240" green="240" blue="240" />
+                </background_color>
+                <foreground_color>
+                  <color red="0" green="0" blue="0" />
+                </foreground_color>
+                <widget_type>Action Button</widget_type>
+                <enabled>true</enabled>
+                <text></text>
+                <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+                <font>
+                  <fontdata fontName="Segoe UI" height="1" style="0" />
+                </font>
+                <width>23</width>
+                <border_style>6</border_style>
+                <push_action_index>0</push_action_index>
+                <image>Pictures/reset.png</image>
+                <rules />
+                <pv_value />
+                <toggle_button>false</toggle_button>
+                <border_width>1</border_width>
+                <border_color>
+                  <color red="0" green="128" blue="255" />
+                </border_color>
+                <y>0</y>
+                <actions hook="false" hook_all="false">
+                  <action type="WRITE_PV">
+                    <pv_name>$(pv_name)</pv_name>
+                    <value>4</value>
+                    <timeout>10</timeout>
+                    <confirm_message></confirm_message>
+                    <description>Refresh Status</description>
+                  </action>
+                </actions>
+                <tooltip>refresh chipId status for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSelect)</tooltip>
+                <x>100</x>
+              </widget>
+              <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+                <macros>
+                  <include_parent_macros>true</include_parent_macros>
+                </macros>
+                <visible>true</visible>
+                <wuid>e180c55:150ec46724f:-4a04</wuid>
+                <auto_size>false</auto_size>
+                <scripts />
+                <zoom_to_fit>true</zoom_to_fit>
+                <height>22</height>
+                <name>Status</name>
+                <scale_options>
+                  <width_scalable>true</width_scalable>
+                  <height_scalable>true</height_scalable>
+                  <keep_wh_ratio>false</keep_wh_ratio>
+                </scale_options>
+                <opi_file>chipIdStatus.opi</opi_file>
+                <foreground_color>
+                  <color red="192" green="192" blue="192" />
+                </foreground_color>
+                <background_color>
+                  <color red="240" green="240" blue="240" />
+                </background_color>
+                <group_name>4x</group_name>
+                <enabled>true</enabled>
+                <widget_type>Linking Container</widget_type>
+                <font>
+                  <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+                </font>
+                <width>101</width>
+                <border_style>0</border_style>
+                <rules />
+                <border_width>1</border_width>
+                <border_color>
+                  <color red="0" green="128" blue="255" />
+                </border_color>
+                <y>0</y>
+                <actions hook="false" hook_all="false" />
+                <x>122</x>
+                <tooltip></tooltip>
+              </widget>
+              <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
+                <wuid>e180c55:150ec46724f:-4a03</wuid>
+                <number_of_columns>3</number_of_columns>
+                <name>Grid Layout</name>
+                <fill_grids>false</fill_grids>
+                <widget_type>Grid Layout</widget_type>
+                <grid_gap>0</grid_gap>
+              </widget>
             </widget>
           </widget>
           <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
-            <wuid>-534ef5a1:14be9f9418a:-60fc</wuid>
+            <wuid>e180c55:150ec46724f:-4a02</wuid>
             <number_of_columns>1</number_of_columns>
             <name>Grid Layout</name>
             <fill_grids>false</fill_grids>
@@ -1103,7 +1671,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
           </widget>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
-          <wuid>-534ef5a1:14be9f9418a:-60fb</wuid>
+          <wuid>e180c55:150ec46724f:-4a01</wuid>
           <number_of_columns>3</number_of_columns>
           <name>Grid Layout</name>
           <fill_grids>true</fill_grids>
@@ -1117,7 +1685,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
         <name>Grid Layout</name>
         <fill_grids>false</fill_grids>
         <widget_type>Grid Layout</widget_type>
-        <grid_gap>0</grid_gap>
+        <grid_gap>2</grid_gap>
       </widget>
     </widget>
   </widget>
@@ -1150,7 +1718,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
     <line_color>
       <color red="0" green="0" blue="0" />
     </line_color>
-    <wuid>-534ef5a1:14be9f9418a:-5fd7</wuid>
+    <wuid>e180c55:150ec46724f:-48a6</wuid>
     <tgt_term>LEFT</tgt_term>
     <arrows>0</arrows>
     <anti_alias>true</anti_alias>
@@ -1159,7 +1727,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
     <line_width>1</line_width>
     <src_wuid>-49c63414:14be403d002:41a0</src_wuid>
     <points />
-    <tgt_wuid>-534ef5a1:14be9f9418a:-6102</tgt_wuid>
+    <tgt_wuid>e180c55:150ec46724f:-48ce</tgt_wuid>
   </connection>
   <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
     <fill_arrow>true</fill_arrow>
@@ -1170,7 +1738,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
     <line_color>
       <color red="0" green="0" blue="0" />
     </line_color>
-    <wuid>-534ef5a1:14be9f9418a:-6170</wuid>
+    <wuid>e180c55:150ec46724f:-48b1</wuid>
     <tgt_term>LEFT</tgt_term>
     <arrows>0</arrows>
     <anti_alias>true</anti_alias>
@@ -1179,27 +1747,7 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
     <line_width>1</line_width>
     <src_wuid>-49c63414:14be483761c:2aba</src_wuid>
     <points />
-    <tgt_wuid>-49c63414:14be403d002:4490</tgt_wuid>
-  </connection>
-  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
-    <fill_arrow>true</fill_arrow>
-    <widget_type>connection</widget_type>
-    <src_term>LEFT</src_term>
-    <arrow_length>15</arrow_length>
-    <line_style>0</line_style>
-    <line_color>
-      <color red="0" green="0" blue="0" />
-    </line_color>
-    <wuid>-534ef5a1:14be9f9418a:-6160</wuid>
-    <tgt_term>RIGHT</tgt_term>
-    <arrows>0</arrows>
-    <anti_alias>true</anti_alias>
-    <router>0</router>
-    <name>connection</name>
-    <line_width>1</line_width>
-    <src_wuid>-49c63414:14be403d002:448e</src_wuid>
-    <points />
-    <tgt_wuid>-49c63414:14be483761c:2aba</tgt_wuid>
+    <tgt_wuid>e180c55:150ec46724f:-4c5a</tgt_wuid>
   </connection>
   <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
     <fill_arrow>true</fill_arrow>
@@ -1210,35 +1758,55 @@ chipId set for port: $(portName) - pinSet: $(pinSet) - side selection: $(sideSel
     <line_color>
       <color red="0" green="0" blue="0" />
     </line_color>
-    <wuid>-534ef5a1:14be9f9418a:-6170</wuid>
+    <wuid>e180c55:150ec46724f:4e17</wuid>
     <tgt_term>LEFT</tgt_term>
     <arrows>0</arrows>
     <anti_alias>true</anti_alias>
     <router>0</router>
     <name>connection</name>
     <line_width>1</line_width>
-    <src_wuid>-534ef5a1:14be9f9418a:-6102</src_wuid>
+    <src_wuid>-49c63414:14be483761c:2aba</src_wuid>
     <points />
-    <tgt_wuid>-534ef5a1:14be9f9418a:-60fd</tgt_wuid>
+    <tgt_wuid>-534ef5a1:14be9f9418a:-6135</tgt_wuid>
   </connection>
   <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
     <fill_arrow>true</fill_arrow>
     <widget_type>connection</widget_type>
-    <src_term>LEFT</src_term>
+    <src_term>RIGHT</src_term>
     <arrow_length>15</arrow_length>
     <line_style>0</line_style>
     <line_color>
       <color red="0" green="0" blue="0" />
     </line_color>
-    <wuid>-534ef5a1:14be9f9418a:-6160</wuid>
-    <tgt_term>RIGHT</tgt_term>
+    <wuid>e180c55:150ec46724f:-48aa</wuid>
+    <tgt_term>LEFT</tgt_term>
     <arrows>0</arrows>
     <anti_alias>true</anti_alias>
     <router>0</router>
     <name>connection</name>
     <line_width>1</line_width>
-    <src_wuid>-534ef5a1:14be9f9418a:-60ff</src_wuid>
+    <src_wuid>e180c55:150ec46724f:-48ce</src_wuid>
     <points />
-    <tgt_wuid>-534ef5a1:14be9f9418a:-6102</tgt_wuid>
+    <tgt_wuid>e180c55:150ec46724f:-4a02</tgt_wuid>
+  </connection>
+  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
+    <fill_arrow>true</fill_arrow>
+    <widget_type>connection</widget_type>
+    <src_term>RIGHT</src_term>
+    <arrow_length>15</arrow_length>
+    <line_style>0</line_style>
+    <line_color>
+      <color red="0" green="0" blue="0" />
+    </line_color>
+    <wuid>e180c55:150ec46724f:-48a8</wuid>
+    <tgt_term>LEFT</tgt_term>
+    <arrows>0</arrows>
+    <anti_alias>true</anti_alias>
+    <router>0</router>
+    <name>connection</name>
+    <line_width>1</line_width>
+    <src_wuid>e180c55:150ec46724f:-48ce</src_wuid>
+    <points />
+    <tgt_wuid>e180c55:150ec46724f:-4a03</tgt_wuid>
   </connection>
 </display>
